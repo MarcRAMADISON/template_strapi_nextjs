@@ -1,0 +1,27 @@
+.menuContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position:'absolute';
+    top:0;
+    left:0;
+    width:100%;
+    height:auto;
+    z-index: 999;
+}
+
+.menuItems{
+    display: flex;
+    flex-direction: row;
+    z-index: 999;
+    margin-right: 150px;
+}
+
+.menuItem{
+    color:#fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left: 40px;
+    cursor:pointer;
+}

@@ -1,4 +1,4 @@
-FROM node:16
+FROM node:20
 # Installing libvips-dev for sharp Compatability
 RUN apt-get update && apt-get install libvips-dev vim -y
 
@@ -14,6 +14,7 @@ COPY ./backend/package*.json ./backend/yarn.lock /app/
 COPY ./.env /app/
 
 ENV PATH /app/node_modules/.bin:$PATH
+
 
 # Install dependencies in /app
 RUN yarn config set network-timeout 600000 -g && yarn install
