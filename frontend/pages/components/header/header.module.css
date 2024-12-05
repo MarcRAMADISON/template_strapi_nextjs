@@ -1,16 +1,5 @@
-.headerContainer {
-    position:relative;
-    left:0;
-    top:0;
-    width: 100%;
-    height: 100vh;
-}
-
-.headerTitle{
+.headerTitle {
     font-size: 5rem;
-    position:absolute;
-    top:40%;
-    left:15%;
     z-index: 99;
     color: #fff;
     text-shadow: 2px 3px 3px #fff;
@@ -19,26 +8,111 @@
     text-align: center;
 }
 
-.contactButton{
+.contactButton {
     width: 300px;
     font-weight: bold;
     font-size: 1.5rem;
-    position:absolute;
-    top:70%;
-    left:40%;
     z-index: 99;
     color: #f3dd52;
     background: none;
     border-color: #f3dd52;
     border-radius: 10%;
-    padding:20px 0px;
+    padding: 20px 0px;
     cursor: pointer;
+    transition: all ease-in 0.5s;
+
 }
 
-.headerSubTitle{
+.contactButton:hover {
+    border: none;
+    background-color: #fff;
+    color: #000;
+}
+
+.headerSubTitle {
     font-size: 2rem;
-    position:absolute;
-    top:85%;
-    left:20%;
-    color:#fff
+    color: #fff;
+    z-index: 99;
+}
+
+.phoneImage {
+    position: absolute;
+    top: 200px;
+    animation: phoneAnimation 5s linear 2;
+    width: 60vw;
+    height: 60vh;
+    max-height: 900px;
+}
+
+@keyframes phoneAnimation {
+    0% {
+        width: 60vw;
+        height: 60vh;
+    }50%{
+        width: 55vw;
+        height: 55vh;
+    }100%{
+        width: 60vw;
+        height: 60vh;
+    }
+}
+
+@media  screen and (min-width:1281px){
+    .headerContainer{
+        max-height: 1080px;
+        background-repeat: no-repeat;
+        padding-top: 15vh;
+    }
+
+}
+
+@media  screen and (max-width:1280px) and (min-width:1080px) {
+    .headerContainer{
+        padding-top: 15vh;
+
+    }
+    .headerTitle {
+        font-size: 4rem;
+    }
+    .contactButton {
+        width: 250px;
+    }
+    .headerSubTitle {
+        font-size: 1.7rem;
+    }
+}
+
+@media  screen and (max-width:1080px) {
+    .headerContainer{
+        max-height: 500px;
+        min-height: 500px;
+    }
+    .headerTitle {
+        font-size: 2.5rem;
+        max-width: 90%;
+    }
+    .contactButton {
+        width: 150px;
+        font-size: 1rem;
+    }
+    .headerSubTitle {
+        font-size: 1.3rem;
+    }
+    .phoneImage{
+        display: none;
+    }
+}
+
+@media  screen and (max-width:600px) {
+    .headerContainer{
+        max-height: 500px;
+        min-height: 500px;
+    }
+    .headerTitle{
+        font-size: 1.9rem;
+
+    }
+    .headerSubTitle {
+        font-size: 1rem;
+    }
 }

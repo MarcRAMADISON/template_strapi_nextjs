@@ -1,0 +1,79 @@
+.descriptionBlock{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:50px;
+    height:fit-content;
+    width:90%;
+    margin-bottom: 0px;
+}
+
+.descriptionTitle{
+    color:#fff;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.descriptionSubTitle{
+    color:#fff;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.sloganBlock{
+ display:flex;
+ flex-direction: row;
+ width:100%;
+ justify-content: space-between;
+ margin-top: 50px;
+}
+
+.sloganItem{
+    color:#f3dd52;
+    font-size:1.5rem;
+    font-weight: bold;
+}
+
+@media  screen and (max-width:1280px) and (min-width:1080px) {
+    .descriptionTitle {
+        font-size: 2rem;
+    }
+    .descriptionSubTitle{
+        font-size: 1.3rem;
+    }
+    .sloganItem{
+        font-size:1.3rem;
+    }
+    .descriptionBlock{
+        margin-top: 30px;
+    }
+   
+}
+
+@media  screen and (max-width:1080px) {
+    .descriptionTitle {
+        font-size: 1.5rem;
+    }
+    .descriptionSubTitle{
+        font-size: 1rem;
+    }
+    .sloganItem{
+        font-size:1rem;
+    }
+    .aboutImage{
+        display:none;
+    }
+    .descriptionBlock{
+        grid-template-columns: 100%;
+    }
+   
+}
+
+@media  screen and (max-width:600px) {
+    .descriptionBlock{
+        grid-template-columns: 100%;
+        width:90% !important;
+        padding: 10px 0px;
+        margin-top: 50px;
+    }
+}

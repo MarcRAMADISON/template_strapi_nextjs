@@ -1,0 +1,78 @@
+.title{
+    color:#fff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 150px;
+}
+
+.textBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:100%;
+    max-width: 1920px;
+    max-height: 1080px;
+
+}
+
+.questBlock{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:50px;
+    margin-top: 70px;
+}
+
+.questLine{
+    border-bottom: solid 1px #62dfbf;
+    padding-bottom: 20px;
+
+}
+
+.formLibelle{
+    color:#fff
+}
+
+@media screen and (max-width:1280px) and (min-width:1080px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .formLibelle{
+        font-size:0.9rem
+    }
+
+    .textBlock{
+        width:70%
+    }
+
+}
+
+@media screen and (max-width:1080px) {
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .formLibelle{
+        font-size:0.9rem
+    }
+
+    .imageNeed{
+        display: none;
+    }
+    .textBlock{
+        width:90%
+    }
+}
+
+@media screen and (max-width:600px) {
+    .needContainer{
+        max-height: 1280px;
+        background: none !important;
+    }
+    .textBlock{
+        height: fit-content;
+        margin: 300px 0 100px 0px
+    }
+
+}
