@@ -15,10 +15,10 @@ export default function Animation({
 }) {
   const cardVariants: Variants = {
     offscreen: {
-      ...props.offsreen,
+      ...props?.offsreen,
     },
     onscreen: {
-      ...props.onscreen,
+      ...props?.onscreen,
       transition: {
         type: "spring",
         bounce: 0.6,

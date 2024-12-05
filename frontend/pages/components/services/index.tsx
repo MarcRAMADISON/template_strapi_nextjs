@@ -40,8 +40,8 @@ function Services() {
               Création de sites web sur mesure
             </span>
             <span className={style.cardDescription}>
-              Chez Jda Diffusion, nous savons qu'un site web est bien plus
-              qu'une simple vitrine en ligne, un outil puissant pour attirer,
+              Chez Jda Diffusion, nous savons qu&apos;un site web est bien plus
+              qu&apos;une simple vitrine en ligne, un outil puissant pour attirer,
               informer et convertir vos visiteurs en clients.
             </span>
           </div>

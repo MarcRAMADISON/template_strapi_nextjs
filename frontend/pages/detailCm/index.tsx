@@ -43,7 +43,7 @@ function DetailCm() {
             }}
           >
             <div className={style.whiteDote}></div>
-            <span className={style.text}>Création de contenu engageant : des visuels attractifs et des textes percutants pour capter l'attention de votre auditeur</span>
+            <span className={style.text}>Création de contenu engageant : des visuels attractifs et des textes percutants pour capter l&apos;attention de votre auditeur</span>
           </div>
           <div
             style={{

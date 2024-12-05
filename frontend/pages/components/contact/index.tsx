@@ -75,7 +75,7 @@ function Contact() {
         </div>
         <div className={style.inputLine}>
           <label className={style.inputText} htmlFor="name">
-            Nom de l'entreprise :
+            Nom de l&apos;entreprise :
           </label>
           <input
             style={{

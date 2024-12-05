@@ -75,10 +75,10 @@ function About() {
             <span className={style.descriptionSubTitle}>
               Boostez votre activité et faites le différence avec Jda Diffusion.
               Grâce à nos solutions de marketing digital, nous contribuons à
-              accroître directement votre chiffre d'affaire et à atteindre vos
+              accroître directement votre chiffre d&apos;affaire et à atteindre vos
               objectifs. Avec des stratégies digitales adaptées, nous
               accompagnons les entreprises, les entrepreneurs, les commerces et
-              bien d'autres vers la réussite.
+              bien d&apos;autres vers la réussite.
             </span>
             <div className={style.sloganBlock}>
               <span className={style.sloganItem}>Proximité</span>
