@@ -8,6 +8,14 @@ function MenuBar() {
 
   return (
     <>
+      <div className={style.upButton} onClick={()=>handleNavigation('header')}>
+      <Image
+          src="/assets/images/upIcon.png"
+          width={30}
+          height={20}
+          alt="jda logo"
+        />
+      </div>
       <div className={style.menuContainer}>
         <Image
           style={{ zIndex: "999", marginLeft: "50px" }}

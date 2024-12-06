@@ -17,7 +17,7 @@ const styling: CSSProperties = {
 
 function Header() {
   return (
-    <div style={styling} className={style.headerContainer}>
+    <div id='header' style={styling} className={style.headerContainer}>
       <div className={style.phoneImage}>
         <Image
           style={{ zIndex: 0, margin: "100px" }}
