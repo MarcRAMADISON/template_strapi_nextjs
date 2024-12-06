@@ -1,0 +1,9 @@
+.imageContainer{
+    width:200px;
+    display:flex;
+    justify-content: space-around;
+}
+.copyright{
+    color:#fff;
+    margin-top: 20px;
+}

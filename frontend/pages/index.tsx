@@ -8,17 +8,18 @@ import Services from "./components/services";
 import Need from "./components/need";
 import Contact from "./components/contact";
 import MenuBar from "./components/menuBar";
+import Footer from "./components/footer";
 
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <MenuBar />
-
       <Header />
       <About />
       <Services />
       <Need />
       <Contact />
+      <Footer/>
     </div>
   );
 };

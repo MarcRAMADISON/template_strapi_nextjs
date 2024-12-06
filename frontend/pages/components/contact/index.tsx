@@ -16,6 +16,10 @@ const styling: CSSProperties = {
 };
 
 function Contact() {
+  const handleChange=()=>{
+
+  }
+
   return (
     <div id="contact" className={style.contactBlock} style={styling}>
       <div className={style.inputBlock}>
@@ -35,6 +39,7 @@ function Contact() {
             id="name"
             name="name"
             required
+            onChange={handleChange}
           />
         </div>
         <div className={style.inputLine}>
@@ -53,6 +58,7 @@ function Contact() {
             id="name"
             name="name"
             required
+            onChange={handleChange}
           />
         </div>
         <div className={style.inputLine}>
@@ -71,6 +77,7 @@ function Contact() {
             id="name"
             name="name"
             required
+            onChange={handleChange}
           />
         </div>
         <div className={style.inputLine}>
@@ -89,6 +96,7 @@ function Contact() {
             id="name"
             name="name"
             required
+            onChange={handleChange}
           />
         </div>
         <div className={style.inputLine}>
@@ -107,6 +115,7 @@ function Contact() {
             id="name"
             name="name"
             required
+            onChange={handleChange}
           />
         </div>
         <div className={style.inputLine}>
@@ -125,6 +134,7 @@ function Contact() {
             id="name"
             name="name"
             required
+            onChange={handleChange}
           />
         </div>
       </div>
@@ -145,6 +155,7 @@ function Contact() {
             id="name"
             name="name"
             required
+            onChange={handleChange}
           />
         </div>
         <div className={style.inputLine}>
@@ -163,6 +174,7 @@ function Contact() {
             id="name"
             name="name"
             required
+            onChange={handleChange}
           />
         </div>
         <div className={style.inputLine}>
@@ -181,6 +193,7 @@ function Contact() {
             id="name"
             name="name"
             required
+            onChange={handleChange}
           />
         </div>
       </div>
@@ -203,6 +216,7 @@ function Contact() {
             name="name"
             required
             multiple
+            onChange={handleChange}
           />
         </div>
         <button className={style.sendButton}>Envoyer</button>
