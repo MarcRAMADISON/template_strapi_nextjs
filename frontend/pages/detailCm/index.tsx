@@ -31,7 +31,7 @@ function DetailCm() {
           name="keywords"
           content="JDA Diffusion, community manager, réseau sociaux, relation, relation client, communication, tik-tok, facebook, instagram, linkedin"
         />
-        <meta property="og:url" content="https://jdadiffusion.com" />
+        <meta property="og:url" content="https://jdadiffusion.fr" />
         <meta
           property="og:title"
           content="JDA Diffusion - Service de gestion de réseaux sociaux"

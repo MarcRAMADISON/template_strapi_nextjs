@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>JDA Diffusion</title>
         <link rel="icon" href="/favicon.png" />
-        <meta property="og:url" content="https://jdadiffusion.com" />
+        <meta property="og:url" content="https://jdadiffusion.fr" />
         <meta property="og:title" content="JDA Diffusion" />
         <meta
           property="og:description"
@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <meta
           name="keywords"
-          content="JDA Diffusion, site vitrine, développement web, community manager, réseaux sociaux, communication, client "
+          content="JDA Diffusion, site vitrine, développement web, community manager, réseaux sociaux, communication, client, tik tok, facebook, instagram, linkedin "
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
