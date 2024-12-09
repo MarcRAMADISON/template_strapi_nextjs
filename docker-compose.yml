@@ -1,23 +1,4 @@
 services:
-  nginx:
-    image: nginx:latest
-    restart: unless-stopped
-    container_name: ${PROJECT_SLUG}_nginx
-    ports:
-      - 80:80
-      - 443:443
-    networks:
-      - internal
-    volumes:
-      - ./backend/public:/app/backend/public
-      - ./frontend/public:/app/frontend/public
-      - ./conf/nginx/:/etc/nginx:ro
-      - ./logs/nginx/:/var/log/nginx
-      - /etc/localtime:/etc/localtime:ro
-    depends_on:
-      - frontend
-      - backend
-
   frontend:
     container_name: ${PROJECT_SLUG}_frontend
     build:
