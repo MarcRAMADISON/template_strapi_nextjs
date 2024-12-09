@@ -8,6 +8,11 @@
     text-align: center;
 }
 
+.logoMobile{
+    display: none;
+}
+
+
 .contactButton {
     width: 300px;
     font-weight: bold;
@@ -69,10 +74,11 @@
 @media  screen and (max-width:1280px) and (min-width:1080px) {
     .headerContainer{
         padding-top: 15vh;
-
+        min-height: 800px;
     }
+
     .headerTitle {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     .contactButton {
         width: 250px;
@@ -83,13 +89,18 @@
 }
 
 @media  screen and (max-width:1080px) {
+    .logoMobile{
+        display: block;
+    }
     .headerContainer{
         max-height: 500px;
         min-height: 500px;
+
     }
     .headerTitle {
         font-size: 2.5rem;
         max-width: 90%;
+        margin-top: -100px;
     }
     .contactButton {
         width: 150px;
@@ -109,7 +120,7 @@
         min-height: 500px;
     }
     .headerTitle{
-        font-size: 1.9rem;
+        font-size: 1.7rem;
 
     }
     .headerSubTitle {

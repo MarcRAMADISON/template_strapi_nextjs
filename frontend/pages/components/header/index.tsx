@@ -1,5 +1,4 @@
 import style from "./header.module.css";
-import MenuBar from "../menuBar";
 import { CSSProperties } from "react";
 import { handleNavigation } from "../../../utils/utils";
 import Image from "next/image";
@@ -17,7 +16,7 @@ const styling: CSSProperties = {
 
 function Header() {
   return (
-    <div id='header' style={styling} className={style.headerContainer}>
+    <div id="header" style={styling} className={style.headerContainer}>
       <div className={style.phoneImage}>
         <Image
           style={{ zIndex: 0, margin: "100px" }}
@@ -26,6 +25,14 @@ function Header() {
           layout="fill"
           objectFit="contain"
           objectPosition="50% 50%"
+        />
+      </div>
+      <div className={style.logoMobile}>
+        <Image
+          src="/assets/images/logo.png"
+          alt="logo_JDA"
+          width={200}
+          height={200}
         />
       </div>
       <span className={style.headerTitle}>
