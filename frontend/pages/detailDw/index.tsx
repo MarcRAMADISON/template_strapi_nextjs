@@ -30,7 +30,7 @@ function DetailCm() {
           name="keywords"
           content="JDA Diffusion, site vitrine, développement web, plateforme web, site de réservation, création, web, internet, intranet, informatique, numérique, plateforme"
         />
-        <meta property="og:url" content="https://jdadiffusion.fr" />
+        <meta property="og:url" content="http://jdadiffusion.fr" />
         <meta
           property="og:title"
           content="JDA Diffusion - Service de développement web"

@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>JDA Diffusion</title>
         <link rel="icon" href="/favicon.png" />
-        <meta property="og:url" content="https://jdadiffusion.fr" />
+        <meta property="og:url" content="http://jdadiffusion.fr" />
         <meta property="og:title" content="JDA Diffusion" />
         <meta
           property="og:description"
