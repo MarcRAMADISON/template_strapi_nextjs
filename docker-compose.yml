@@ -1,5 +1,5 @@
 services:
-
+ 
   frontend:
     container_name: ${PROJECT_SLUG}_frontend
     build:

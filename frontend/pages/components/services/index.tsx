@@ -15,8 +15,7 @@ function Services() {
     backgroundImage: `url('/assets/images/servicesBg.jpg')`,
     width: "100%",
     height: "fit-content",
-    minHeight:'900px',
-    maxHeight: "1080px",
+    minHeight:'1080px',
   };
 
   return (
