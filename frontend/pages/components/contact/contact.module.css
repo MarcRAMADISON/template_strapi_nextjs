@@ -69,15 +69,15 @@
     .lineBlock{
         column-gap: 0;
         row-gap:20px;
-        width: 60%;
-        margin-right: 30vw;
+        width: 50%;
+        margin-right: 40vw;
         margin-top: 20px;
     }
     .inputBlock{
         column-gap: 0;
         row-gap:20px;
-        width: 60%;
-        margin-right: 30vw;
+        width: 50%;
+        margin-right: 40vw;
     }
     .inputLine{
         max-width: 80%;
