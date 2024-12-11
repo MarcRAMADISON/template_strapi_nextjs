@@ -4,6 +4,7 @@ import style from "./detailDw.module.css";
 import { useRouter } from "next/router";
 import Animation from "../components/animation";
 import Head from "next/head";
+import { NextSeo } from "next-seo";
 
 function DetailCm() {
   const route = useRouter();
@@ -24,27 +25,16 @@ function DetailCm() {
 
   return (
     <>
-      <Head>
-        <title>JDA Diffusion - Service de développement web</title>
-        <meta
-          name="keywords"
-          content="JDA Diffusion, site vitrine, développement web, plateforme web, site de réservation, création, web, internet, intranet, informatique, numérique, plateforme"
+      <NextSeo
+            title="JDA Diffusion - Service de développement web"
+            description="Page de détail du service de développement web, réferencement SEO, Optimisation web, plateforme numérique."
+            canonical="https://jdadiffusion.fr/detailDw"
+            openGraph={{
+                type: 'Détail développeur web',
+                url: 'https://jdadiffusion.fr/detailDw',
+                site_name: 'Détail Développeur web'
+            }}
         />
-        <meta property="og:url" content="http://jdadiffusion.fr" />
-        <meta
-          property="og:title"
-          content="JDA Diffusion - Service de développement web"
-        />
-        <meta
-          property="og:description"
-          content="Page de détail du service de développement web, réferencement SEO, Optimisation web, plateforme numérique."
-        />
-        <meta
-          name="description"
-          content="Page de détail du service de développement web, réferencement SEO, Optimisation web, plateforme numérique."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
       <div style={styling}>
         <div className={style.textBlock}>
           <div

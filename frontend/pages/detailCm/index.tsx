@@ -4,6 +4,7 @@ import style from "./detailCm.module.css";
 import { useRouter } from "next/router";
 import Animation from "../components/animation";
 import Head from "next/head";
+import { NextSeo } from "next-seo";
 
 function DetailCm() {
   const route = useRouter();
@@ -25,27 +26,16 @@ function DetailCm() {
 
   return (
     <>
-      <Head>
-        <title>JDA Diffusion - Service de gestion de réseaux sociaux</title>
-        <meta
-          name="keywords"
-          content="JDA Diffusion, community manager, réseau sociaux, relation, relation client, communication, tik-tok, facebook, instagram, linkedin"
+    <NextSeo
+            title="JDA Diffusion - Service de gestion de réseaux sociaux"
+            description="Page de détail du service de gestion de réseaux sociaux, relation clients, community manager."
+            canonical="https://jdadiffusion.fr/detailCm"
+            openGraph={{
+                type: 'Détail community manager',
+                url: 'https://jdadiffusion.fr/detailCm',
+                site_name: 'Détail community manager'
+            }}
         />
-        <meta property="og:url" content="http://jdadiffusion.fr" />
-        <meta
-          property="og:title"
-          content="JDA Diffusion - Service de gestion de réseaux sociaux"
-        />
-        <meta
-          property="og:description"
-          content="Page de détail du service de gestion de réseaux sociaux, relation clients, community manager."
-        />
-        <meta
-          name="description"
-          content="Page de détail du service de gestion de réseaux sociaux, relation clients, community manager."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
       <div style={styling}>
         <div className={style.textBlock}>
           <div
