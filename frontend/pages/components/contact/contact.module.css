@@ -49,6 +49,24 @@
     color:#000;
 }
 
+.disabledButton{
+    position:absolute;
+    bottom:-100px;
+    left:0;
+    place-self: left;
+    height:60px;
+    width: 150px;
+    font-weight: bold;
+    font-size: 1rem;
+    z-index: 99;
+    color: grey;
+    background: none;
+    border-color: grey;
+    border-radius: 10%;
+    padding:20px 0px;
+    cursor: pointer;
+    transition:all ease-in 0.5s;
+}
 @media  screen and (max-width:1280px) and (min-width:1080px) {
     .lineBlock{
         gap:30px
