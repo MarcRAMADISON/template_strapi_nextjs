@@ -15,7 +15,7 @@ function Services() {
     backgroundImage: `url('/assets/images/servicesBg.jpg')`,
     width: "100%",
     height: "fit-content",
-    minHeight:'1080px',
+    minHeight: "860px",
   };
 
   return (
@@ -28,25 +28,36 @@ function Services() {
               Gestion des réseaux <br />
               sociaux
             </span>
-            <span className={style.cardDescription}>
-              Les réseaux sociaux sont clés pour créer une communauté et booster
-              votre notoriété. Jda Diffusion élabore des stratégies sur mésure
-              pour vous faire briller sur les plateformes incontournables comme
-              Facebook, Instagram, LinkedIn ou Tik Tok ....
-            </span>
+            <div className={style.cardDescription}>
+              <span>
+                Les réseaux sociaux sont clés pour créer une communauté et
+                booster votre notoriété. Jda Diffusion élabore des stratégies
+                sur mésure pour vous faire briller sur les plateformes
+                incontournables comme Facebook, Instagram, LinkedIn ou Tik Tok
+                ....
+              </span>
+              <div className={style.overlay}>
+                <button className={style.buttonDetail}>Voir détail</button>
+              </div>
+            </div>
           </div>
           <div className={style.card} onClick={() => route.push("/detailDw")}>
             <span className={style.cardTitle}>
               Création de sites web sur mesure
             </span>
-            <span className={style.cardDescription}>
-              Chez Jda Diffusion, nous savons qu&apos;un site web est bien plus
-              qu&apos;une simple vitrine en ligne, un outil puissant pour attirer,
-              informer et convertir vos visiteurs en clients.
-            </span>
+            <div className={style.cardDescription}>
+              <span>
+                Chez Jda Diffusion, nous savons qu&apos;un site web est bien
+                plus qu&apos;une simple vitrine en ligne, un outil puissant pour
+                attirer, informer et convertir vos visiteurs en clients.
+              </span>
+              <div className={style.overlay}>
+                <button className={style.buttonDetail}>Voir détail</button>
+              </div>
+            </div>
           </div>
         </div>
-        <div style={{ marginTop: "50px",width:"90%" }}>
+        <div style={{ marginTop: "50px", width: "90%" }}>
           <span className={style.subTitle}>
             Booster votre activité avec nos services sur mesure : création de
             site web performants et gestion efficace des réseaux sociaux pour
@@ -67,9 +78,9 @@ function Services() {
         }}
         style={{
           width: "100vw",
-          height:"100vh",
-          maxHeight:"920px",
-          maxWidth:'950px',
+          height: "100vh",
+          maxHeight: "920px",
+          maxWidth: "950px",
           position: "relative",
         }}
         className={style.imageServices}

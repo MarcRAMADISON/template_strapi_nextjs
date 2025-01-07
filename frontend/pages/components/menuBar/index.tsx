@@ -11,8 +11,8 @@ function MenuBar() {
       <div className={style.upButton} onClick={()=>handleNavigation('header')}>
       <Image
           src="/assets/images/upIcon.png"
-          width={30}
-          height={20}
+          width={15}
+          height={10}
           alt="jda logo"
         />
       </div>

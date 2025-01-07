@@ -278,10 +278,9 @@ function Contact() {
         </div>
       </div>
       <div
-        style={{ position: "relative", width: "60%", marginTop: "50px" }}
+        style={{ position: "relative",marginTop: "50px" }}
         className={style.message}
       >
-        <div className={style.inputLine}>
           <label className={style.inputText} htmlFor="message">
             Message * :
           </label>
@@ -300,7 +299,6 @@ function Contact() {
             required
             onChange={handleChange}
           />
-        </div>
         <button className={checkdisable ? style.disabledButton : style.sendButton} onClick={handleSend} disabled={checkdisable}>
           Envoyer
         </button>

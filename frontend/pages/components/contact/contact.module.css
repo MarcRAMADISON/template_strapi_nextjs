@@ -14,6 +14,7 @@
     width:60%;
     gap:50px;
     margin-top: 70px;
+    place-self: left;
 }
 
 .lineBlock{
@@ -67,12 +68,26 @@
     cursor: pointer;
     transition:all ease-in 0.5s;
 }
+
+.message{
+    display: flex;
+    flex-direction: column;
+    width:60%
+}
 @media  screen and (max-width:1280px) and (min-width:1080px) {
     .lineBlock{
+        width:90%;
+    padding: 0px 2%;
         gap:30px
     }
     .inputBlock{
+        width:90%;
+    padding: 0px 2%;
         gap:30px;
+    }
+
+    .message{
+        width:85%;
     }
    
 }
@@ -80,22 +95,27 @@
 @media  screen and (max-width:1080px) {
    .lineBlock{
     grid-template-columns: repeat(2,1fr);
+    width:100%;
+    padding: 0px 2%;
    }
+   .inputBlock{
+    width:100%;
+    padding: 0px 2%;
+   }
+   .message{
+    width:90%;
+}
 }
 
 @media screen and (max-width:485px) {
     .lineBlock{
         column-gap: 0;
         row-gap:20px;
-        width: 50%;
-        margin-right: 40vw;
         margin-top: 20px;
     }
     .inputBlock{
         column-gap: 0;
         row-gap:20px;
-        width: 50%;
-        margin-right: 40vw;
     }
     .inputLine{
         max-width: 80%;
@@ -107,6 +127,6 @@
         margin-top: 110px !important;
     }
     .message{
-        width:90vw !important
+        width:90%
     }
 }

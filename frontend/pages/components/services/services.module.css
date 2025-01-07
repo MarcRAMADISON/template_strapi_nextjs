@@ -4,7 +4,7 @@
     align-items: flex-start;
     width: 100%;
     max-height: 1080px;
-    margin: 0 0 0 10%;
+    margin: 0 0 0 3%;
     z-index: 99
 }
 
@@ -43,11 +43,42 @@
     margin-top: 30px;
     min-height: 250px;
     transition: all ease-in 0.5s;
-
+    position: relative;
+    z-index: 1;
 }
 
-.cardDescription:hover {
-    background-color: #fff;
+.cardDescription:hover .overlay{
+    height:100%;
+    opacity: 1;
+}
+
+.overlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.7);
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 999;
+    width:100%;
+    border-radius: 20px;
+    height: 0;
+    opacity: 0;
+    transition: all ease-in 0.5s;
+}
+
+.buttonDetail{
+    font-weight: bold;
+    font-size: 1rem;
+    z-index: 99;
+    color: #000;
+    background: none;
+    border-color: #000;
+    border-radius: 10%;
+    padding: 20px 40px;
+    cursor: pointer;
+    transition: all ease-in 0.5s;
 }
 
 .subTitle {
@@ -57,7 +88,7 @@
 
 .contactButton {
     position: absolute;
-    bottom: 0px;
+    bottom: -20px;
     place-self: left;
     width: 300px;
     font-weight: bold;
@@ -88,9 +119,6 @@
         font-size: 1.3rem;
     }
 
-    .blockText{
-        margin-left: 5%;
-    }
     .subTitle {
         font-size: 1.3rem
     }
@@ -98,10 +126,15 @@
         font-size: 0.8rem;
     }
     .contactButton{
-        bottom: -15vh;
+        bottom: -10vh;
     }
     .cardContainer{
         gap:20px
+    }
+    .buttonDetail{
+        font-size: 0.9rem;
+        padding: 10px 20px;
+        
     }
 
 }
@@ -119,9 +152,6 @@
         font-size: 1rem;
     }
 
-    .blockText{
-        margin-left: 1%;
-    }
     .subTitle {
         font-size: 1rem
     }

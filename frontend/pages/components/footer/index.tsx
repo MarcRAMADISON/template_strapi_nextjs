@@ -23,8 +23,8 @@ function Footer() {
             src="/assets/images/facebook.png"
             className={style.imageItem}
             alt="facebook logo"
-            width={30}
-            height={30}
+            width={25}
+            height={25}
           />
         </a>
         <a
@@ -35,8 +35,8 @@ function Footer() {
             src="/assets/images/instagram_logo.png"
             className={style.imageItem}
             alt="instagram logo"
-            width={30}
-            height={30}
+            width={25}
+            height={25}
           />
         </a>
         <a
@@ -47,8 +47,8 @@ function Footer() {
             src="/assets/images/tik_tok.png"
             className={style.imageItem}
             alt="tik tok logo"
-            width={30}
-            height={30}
+            width={25}
+            height={25}
           />
         </a>
         <a
@@ -59,8 +59,8 @@ function Footer() {
             src="/assets/images/linkedin.png"
             className={style.imageItem}
             alt="linkedin logo"
-            width={30}
-            height={30}
+            width={25}
+            height={25}
           />
         </a>
       </div>
