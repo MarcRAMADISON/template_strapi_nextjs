@@ -32,7 +32,7 @@ interface contactObject {
 const defaultContact = {
   nom: "",
   prenom: "",
-  typeEntreprise: "",
+  typeEntreprise: "Restaurant",
   nomEntreprise: "",
   telephone: "",
   email: "",
@@ -65,9 +65,9 @@ function Contact() {
           setShowMessage("ERROR");
         }
       );
-      console.log("values", values);
     }
   };
+
 
   const checkdisable=!values?.typeEntreprise || !values?.nomEntreprise || !values?.telephone || !values?.email || !values?.message;
 
