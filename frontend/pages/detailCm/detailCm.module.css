@@ -27,10 +27,6 @@
     margin: 0px 20px 0px 0px;
 }
 
-.text{
-    color: #fff;
-    font-size: 1.2rem;
-}
 
 .backButton{
     position:absolute;
@@ -55,21 +51,53 @@
     color:#000;
 }
 
+.tarifTitle{
+    color: #f3dd52;
+    font-size: 1.2rem;
+    margin: 20px 0px;
+    font-weight: bold;
+}
+
+.tarifContainer{
+    display: grid;
+    grid-template-columns:100%;
+    gap:50px;
+    width:100%;
+    margin: 50px;
+
+}
+
+.tarifBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width:300px;
+}
+
+.lineTarif{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.textTarif{
+    color: #fff;
+    font-size: 1.2rem;
+}
+
 @media (max-width:1080px){
     .imageDetail{
         display: none;
     }
     .textBlock{
-        margin: 50px 50px 200px 50px;
+        margin: 50px 50px 150px 50px;
     }
     .title{
         font-size: 1.3rem;
     }
-    .text{
-        font-size: 1rem;
-    }
-    .textContainer{
-        align-items: flex-start !important ;
+    .tarifContainer{
+        margin: 50px 2%;
     }
     .backButton{
         bottom: 20px;
@@ -83,5 +111,8 @@
     .whiteDote{
         width: 10px;
         height: 10px;
+    }
+    .tarifTitle, .textTarif{
+        font-size: 1rem;
     }
 }

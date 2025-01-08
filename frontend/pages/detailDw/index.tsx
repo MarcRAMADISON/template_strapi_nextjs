@@ -16,9 +16,9 @@ function DetailCm() {
     backgroundImage: `url('/assets/images/detailBg.jpg')`,
     width: "100%",
     maxWidth: "1920px",
-    height: "fit-content",
-    maxHeight: "1080px",
-    backgroundRepeat: "no-repeat",
+    height: "100%",
+    minHeight:"100vh",
+    backgroundSize:"cover",
     placeSelf: "center",
     position: "relative",
   };
@@ -47,11 +47,7 @@ function DetailCm() {
             <span className={style.title}>Création de sites sur mesure</span>
           </div>
           <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              margin: "60px 0px 0px 60px",
-            }}
+            className={style.block}
           >
             <div
               style={{
@@ -138,9 +134,9 @@ function DetailCm() {
           }}
           style={{
             position: "relative",
-            width: "100vw",
-            height: "100vh",
-            maxHeight: "1080px",
+            width: "80vw",
+            height: "80vh",
+            marginTop:"10vh"
           }}
           className={style.imageDetail}
         >

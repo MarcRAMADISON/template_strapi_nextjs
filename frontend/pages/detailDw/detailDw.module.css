@@ -19,7 +19,7 @@
     margin: 100px 0px 0px 50px
 }
 
-.whiteDote{
+.whiteDote {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -27,15 +27,15 @@
     margin: 0px 20px 0px 0px;
 }
 
-.text{
+.text {
     color: #fff;
     font-size: 1.2rem;
 }
 
-.backButton{
-    position:absolute;
-    bottom:50px;
-    left:60px;
+.backButton {
+    position: absolute;
+    bottom: 50px;
+    left: 60px;
     width: 150px;
     font-weight: bold;
     font-size: 1.3rem;
@@ -44,45 +44,63 @@
     background: none;
     border-color: #f3dd52;
     border-radius: 10%;
-    padding:10px 0px;
+    padding: 10px 0px;
     cursor: pointer;
     transition: all ease-in 0.5s;
 
 }
 
-.backButton:hover{
-    border:none;
+.backButton:hover {
+    border: none;
     background-color: #fff;
-    color:#000;
+    color: #000;
 }
 
-@media (max-width:1080px){
-    .imageDetail{
+.block {
+    display: flex;
+    flex-direction: column;
+    margin: 60px 0px 0px 60px
+}
+
+@media (max-width:1080px) {
+    .imageDetail {
         display: none;
     }
-    .textBlock{
-        margin: 50px 50px 200px 50px;
+
+    .textBlock {
+        margin: 50px 50px 150px 20px;
     }
-    .title{
+
+    .title {
         font-size: 1.3rem;
     }
-    .text{
+
+    .text {
         font-size: 1rem;
     }
-    .textContainer{
-        align-items: flex-start !important ;
+
+    .textContainer {
+        align-items: flex-start !important;
     }
-    .backButton{
+
+    .backButton {
         bottom: 20px;
         font-size: 1rem;
-        width:100px
+        width: 100px
     }
-    .blueDote{
+
+    .blueDote {
         width: 15px;
         height: 15px;
     }
-    .whiteDote{
+
+    .whiteDote {
         width: 10px;
         height: 10px;
+    }
+    .block {
+        display: flex;
+        flex-direction: column;
+        margin: 60px 0px 0px 20px
     }
 }

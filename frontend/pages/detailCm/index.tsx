@@ -17,26 +17,25 @@ function DetailCm() {
     backgroundColor: "#000",
     width: "100%",
     maxWidth: "1920px",
-    height: "fit-content",
-    maxHeight: "1080px",
-    backgroundRepeat: "no-repeat",
+    height: "100%",
+    backgroundSize: "cover",
     placeSelf: "center",
     position: "relative",
   };
 
   return (
     <>
-    <NextSeo
-            title="JDA Diffusion - Service de gestion de réseaux sociaux"
-            description="Page de détail du service de gestion de réseaux sociaux, relation clients, community manager."
-            canonical="https://jdadiffusion.fr/detailCm"
-            openGraph={{
-                type: 'Détail community manager',
-                url: 'https://jdadiffusion.fr/detailCm',
-                site_name: 'Détail community manager'
-            }}
-        />
-      <div style={styling}>
+      <NextSeo
+        title="JDA Diffusion - Service de gestion de réseaux sociaux"
+        description="Page de détail du service de gestion de réseaux sociaux, relation clients, community manager."
+        canonical="https://jdadiffusion.fr/detailCm"
+        openGraph={{
+          type: "Détail community manager",
+          url: "https://jdadiffusion.fr/detailCm",
+          site_name: "Détail community manager",
+        }}
+      />
+      <div style={styling} className={style.container}>
         <div className={style.textBlock}>
           <div
             style={{
@@ -47,95 +46,186 @@ function DetailCm() {
             <div className={style.blueDote}></div>
             <span className={style.title}>Gestion des réseaux sociaux</span>
           </div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              margin: "60px 0px 0px 60px",
-            }}
-          >
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-              }}
-            >
-              <div className={style.whiteDote}></div>
-              <span className={style.text}>
-                Création de contenu engageant : des visuels attractifs et des
-                textes percutants pour capter l&apos;attention de votre auditeur
-              </span>
+          <div className={style.tarifContainer}>
+            <div className={style.tarifBlock}>
+              <span className={style.tarifTitle}>Offre Access</span>
+              <div className={style.lineTarif}>
+                <div className={style.whiteDote}></div>
+                <span className={style.textTarif}>
+                  Un Community Manager personnalisé 100 avis positifs de plus
+                  sur Google
+                </span>
+              </div>
+              <div className={style.lineTarif}>
+                <div className={style.whiteDote}></div>
+                <span className={style.textTarif}>
+                  Gestion de 2 réseaux sociaux au choix (Facebook, Linkedin,
+                  Instagram et TikTok) : animation, envoi des messages, réponses
+                  aux commentaires, conception réponse type
+                </span>
+              </div>
+              <div className={style.lineTarif}>
+                <div className={style.whiteDote}></div>
+                <span className={style.textTarif}>Veille concurrentielle</span>
+              </div>
+              <div className={style.lineTarif}>
+                <div className={style.whiteDote}></div>
+                <span className={style.textTarif}>
+                  Création de la ligne éditoriale: élaboration du planning de
+                  publication avec contenu textuel et visuel
+                </span>
+              </div>
+              <div className={style.lineTarif}>
+                <div className={style.whiteDote}></div>
+                <span className={style.textTarif}>
+                  Feedback sur les résultats obtenus chaque fin du mois
+                </span>
+              </div>
+              <div style={{ display: "flex", marginTop: "30px" }}>
+                <span
+                  style={{
+                    color: "#fff",
+                    fontSize: "1rem",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Tarif :
+                </span>
+                <span
+                  style={{
+                    color: "#f3dd52",
+                    fontSize: "1rem",
+                    marginLeft: "10px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  500€ HT/mois
+                </span>
+              </div>
+              <div style={{ display: "flex", marginTop: "15px" }}>
+                <span
+                  style={{
+                    color: "#fff",
+                    fontSize: "1rem",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Frais de démarrage :
+                </span>
+                <span
+                  style={{
+                    color: "#f3dd52",
+                    fontSize: "1rem",
+                    marginLeft: "10px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  1000€* HT
+                </span>
+              </div>
             </div>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                marginTop: "30px",
-              }}
-            >
-              <div className={style.whiteDote}></div>
-              <span className={style.text}>
-                Calendrier éditorial : Une planification efficace pour publier
-                régulièrement et maximiser votre impact.
-              </span>
-            </div>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                marginTop: "30px",
-              }}
-            >
-              <div className={style.whiteDote}></div>
-              <span className={style.text}>
-                Optimiser mon budget publicitaire pour un maximum de résultats.
-              </span>
-            </div>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                marginTop: "30px",
-              }}
-            >
-              <div className={style.whiteDote}></div>
-              <span className={style.text}>
-                Publicités ciblées : campagnes sponsorisées pour toucher
-                directement vos clients potentiels.
-              </span>
-            </div>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                marginTop: "30px",
-              }}
-            >
-              <div className={style.whiteDote}></div>
-              <span className={style.text}>
-                Animation de communauté : Réponses aux commentaires, gestion des
-                messages et fidélisation de votre audience.
-              </span>
-            </div>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                marginTop: "30px",
-              }}
-            >
-              <div className={style.whiteDote}></div>
-              <span className={style.text}>
-                Analyse des performances : suivi des résultats pour ajuster les
-                stratégies et atteindre vos objectifs.
-              </span>
+            <div className={style.tarifBlock}>
+              <span className={style.tarifTitle}>Offre Premium</span>
+              <div className={style.lineTarif}>
+                <div className={style.whiteDote}></div>
+                <span className={style.textTarif}>
+                  Un Community Manager personnalisé 300 avis positifs de plus
+                  sur Google
+                </span>
+              </div>
+              <div className={style.lineTarif}>
+                <div className={style.whiteDote}></div>
+                <span className={style.textTarif}>
+                  Gestion de 4 réseaux sociaux (Facebook, Linkedin, Instagram et
+                  TikTok) : animation, envoi des messages, réponses aux
+                  commentaires, conception de réponse type
+                </span>
+              </div>
+              <div className={style.lineTarif}>
+                <div className={style.whiteDote}></div>
+                <span className={style.textTarif}>
+                  Veille concurrentielle plus détaillée
+                </span>
+              </div>
+              <div className={style.lineTarif}>
+                <div className={style.whiteDote}></div>
+                <span className={style.textTarif}>
+                  Création de la ligne éditoriale: élaboration du planning de
+                  publication avec contenu textuel et visuel
+                </span>
+              </div>
+              <div className={style.lineTarif}>
+                <div className={style.whiteDote}></div>
+                <span className={style.textTarif}>
+                  Feedback plus détaillé sur les résultats obtenus chaque fin du
+                  mois
+                </span>
+              </div>
+              <div className={style.lineTarif}>
+                <div className={style.whiteDote}></div>
+                <span className={style.textTarif}>
+                  Aide à la création d&apos;évènements et conseil sur les
+                  produits générateurs de buzz
+                </span>
+              </div>
+              <div className={style.lineTarif}>
+                <div className={style.whiteDote}></div>
+                <span className={style.textTarif}>
+                  Création de site de réservation offert
+                </span>
+              </div>
+              <div style={{ display: "flex", marginTop: "30px" }}>
+                <span
+                  style={{
+                    color: "#fff",
+                    fontSize: "1rem",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Tarif :
+                </span>
+                <span
+                  style={{
+                    color: "#f3dd52",
+                    fontSize: "1rem",
+                    marginLeft: "10px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  1300€ HT/mois
+                </span>
+              </div>
+              <div style={{ display: "flex", marginTop: "15px" }}>
+                <span
+                  style={{
+                    color: "#fff",
+                    fontSize: "1rem",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Frais de démarrage :
+                </span>
+                <span
+                  style={{
+                    color: "#f3dd52",
+                    fontSize: "1rem",
+                    marginLeft: "10px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  1500€* HT
+                </span>
+              </div>
             </div>
           </div>
+           <div style={{display:"flex",justifyContent:'center',alignItems:"center"}}>
+          <span style={{color:"#fff", fontStyle:"italic"}}>*La gratuité du frais de démarrage est un levier de vente</span>
+        </div>
         </div>
 
         <button className={style.backButton} onClick={() => route.push("/")}>
-          Retour
-        </button>
+            Retour
+          </button>
         <Animation
           props={{
             offsreen: {
@@ -149,9 +239,9 @@ function DetailCm() {
           }}
           style={{
             position: "relative",
-            width: "100vw",
-            height: "100vh",
-            maxHeight: "1080px",
+            width: "70vw",
+            height: "70vh",
+            marginTop:"10vh"
           }}
           className={style.imageDetail}
         >
@@ -160,7 +250,7 @@ function DetailCm() {
             alt="community manager illustration"
             layout="fill"
             objectFit="contain"
-            objectPosition="100%"
+            objectPosition="100% 25%"
           />
         </Animation>
       </div>
