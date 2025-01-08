@@ -120,7 +120,7 @@ function DetailCm() {
                     fontWeight: "bold",
                   }}
                 >
-                  1000€* HT
+                  1000€ HT
                 </span>
               </div>
             </div>
@@ -213,14 +213,11 @@ function DetailCm() {
                     fontWeight: "bold",
                   }}
                 >
-                  1500€* HT
+                  1500€ HT
                 </span>
               </div>
             </div>
           </div>
-           <div style={{display:"flex",justifyContent:'center',alignItems:"center"}}>
-          <span style={{color:"#fff", fontStyle:"italic"}}>*La gratuité du frais de démarrage est un levier de vente</span>
-        </div>
         </div>
 
         <button className={style.backButton} onClick={() => route.push("/")}>
