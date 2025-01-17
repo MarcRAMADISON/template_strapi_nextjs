@@ -40,8 +40,14 @@ function Services() {
                 <button className={style.buttonDetail}>Voir détail</button>
               </div>
             </div>
+            <button
+              className={style.detailAction}
+              onClick={() => route.push("/detailCm")}
+            >
+              Détail
+            </button>
           </div>
-          <div className={style.card} onClick={() => route.push("/detailDw")}>
+          <div className={style.card}>
             <span className={style.cardTitle}>
               Création de sites web sur mesure
             </span>
@@ -51,10 +57,19 @@ function Services() {
                 plus qu&apos;une simple vitrine en ligne, un outil puissant pour
                 attirer, informer et convertir vos visiteurs en clients.
               </span>
-              <div className={style.overlay}>
+              <div
+                className={style.overlay}
+                onClick={() => route.push("/detailDw")}
+              >
                 <button className={style.buttonDetail}>Voir détail</button>
               </div>
             </div>
+            <button
+              className={style.detailAction}
+              onClick={() => route.push("/detailDw")}
+            >
+              Détail
+            </button>
           </div>
         </div>
         <div style={{ marginTop: "50px", width: "90%" }}>

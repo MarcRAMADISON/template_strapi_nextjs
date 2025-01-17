@@ -109,6 +109,29 @@
     color: #000;
 }
 
+.detailAction{
+    place-self: left;
+    font-weight: bold;
+    font-size: 1.1rem;
+    z-index: 99;
+    color: #f3dd52;
+    background: none;
+    border-color: #f3dd52;
+    border-radius: 10%;
+    padding: 10px 0px;
+    cursor: pointer;
+    transition: all ease-in 0.5s;
+    width:'100%';
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.detailAction:hover {
+    border: none;
+    background-color: #fff;
+    color: #000;
+}
+
 @media screen and (max-width:1280px) and (min-width:1080px) {
     .title {
         font-size: 2rem;
@@ -136,6 +159,9 @@
         padding: 10px 20px;
         
     }
+    .detailAction{
+        font-size: 0.9rem;
+    }
 
 }
 
@@ -162,6 +188,9 @@
         margin: 0;
         align-items: center;
     }
+    .detailAction{
+        font-size: 0.9rem;
+    }
     
 }
 
@@ -169,12 +198,18 @@
     .cardContainer{
         grid-template-columns: 100%;
     }
+    .detailAction{
+        font-size: 0.9rem;
+    }
 
 }
 
 @media screen and (max-width:400px) {
     .serviceContainer{
         background: none !important;
+    }
+    .detailAction{
+        font-size: 0.9rem;
     }
 
 }
