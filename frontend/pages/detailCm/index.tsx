@@ -102,7 +102,7 @@ function DetailCm() {
                   500€ HT/mois
                 </span>
               </div>
-              <div style={{ display: "flex", marginTop: "15px" }}>
+              <div style={{ display: "flex", marginTop: "15px",flexWrap:"wrap" }}>
                 <span
                   style={{
                     color: "#fff",
@@ -118,9 +118,21 @@ function DetailCm() {
                     fontSize: "1rem",
                     marginLeft: "10px",
                     fontWeight: "bold",
+                    textDecoration:"line-through"
                   }}
                 >
                   1000€ HT
+                </span>
+                <span
+                  style={{
+                    color: "#fff",
+                    fontSize: "1rem",
+                    marginLeft: "10px",
+                    fontWeight:"bold",
+                    fontStyle:"italic"
+                  }}
+                >
+                  Offert jusqu&apos;au 1er février
                 </span>
               </div>
             </div>
@@ -195,7 +207,7 @@ function DetailCm() {
                   1300€ HT/mois
                 </span>
               </div>
-              <div style={{ display: "flex", marginTop: "15px" }}>
+              <div style={{ display: "flex", marginTop: "15px",flexWrap:'wrap' }}>
                 <span
                   style={{
                     color: "#fff",
@@ -211,9 +223,21 @@ function DetailCm() {
                     fontSize: "1rem",
                     marginLeft: "10px",
                     fontWeight: "bold",
+                    textDecoration:"line-through"
                   }}
                 >
                   1500€ HT
+                </span>
+                <span
+                  style={{
+                    color: "#fff",
+                    fontSize: "1rem",
+                    marginLeft: "10px",
+                    fontWeight:'bold',
+                    fontStyle:'italic'
+                  }}
+                >
+                  Offert jusqu&apos;au 1er février
                 </span>
               </div>
             </div>
