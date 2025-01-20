@@ -9,6 +9,7 @@ const styling: CSSProperties = {
   alignItems: "center",
   justifyContent: "space-around",
   backgroundImage: `url('/assets/images/headerBg.jpg')`,
+  backgroundPosition: 'center',
   width: "100%",
   height: "90vh",
   position: "relative",

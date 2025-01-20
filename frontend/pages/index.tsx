@@ -7,6 +7,7 @@ import Need from "./components/need";
 import Contact from "./components/contact";
 import MenuBar from "./components/menuBar";
 import Footer from "./components/footer";
+import Avis from "./components/avis/page";
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
       <About />
       <Services />
       <Need />
+      <Avis/>
       <Contact />
       <Footer/>
     </div>

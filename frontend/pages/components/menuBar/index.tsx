@@ -45,6 +45,12 @@ function MenuBar() {
           </div>
           <div
             className={style.menuItem}
+            onClick={(e) => handleNavigation("avis")}
+          >
+            Avis
+          </div>
+          <div
+            className={style.menuItem}
             onClick={(e) => handleNavigation("contact")}
             style={{ color: "#f3dd52" }}
           >
@@ -94,6 +100,15 @@ function MenuBar() {
               }}
             >
               Vos besoins
+            </span>
+            <span
+              className={style.menuItem}
+              onClick={(e) => {
+                handleNavigation("avis");
+                setShowMenu(false);
+              }}
+            >
+              Avis
             </span>
             <span
               className={style.menuItem}
