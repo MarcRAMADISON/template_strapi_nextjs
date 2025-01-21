@@ -6,27 +6,27 @@ import Image from "next/image";
 
 const avisList = [
   {
-    name: "John doe",
-    avatarUrl: "",
+    name: "MZO CONTACT CENTER",
+    avatarUrl: "/assets/images/logo_mzo.png",
     description:
-      "Mollit ipsum anim aliquip ad proident laborum amet cillum enim ex ipsum. Eiusmod consequat Lorem est laboris aliqua quis laborum laborum dolor voluptate ut Lorem. Est ea quis nisi aute sunt excepteur consequat sint est quis. Tempor quis consectetur ad voluptate adipisicing ad ea. Fugiat anim do veniam ullamco mollit excepteur eu do nisi exercitation ut fugiat sint deserunt. Eu nostrud minim ad deserunt dolore laboris occaecat. Aliqua eu consequat enim irure fugiat incididunt fugiat sit adipisicing esse proident nisi.",
+      "Grâce à JDA Diffusion, je peux me concentrer sur mon cœur de métier sans me soucier de ma communication. Ils s’occupent de tout et le font à la perfection. Je suis ravie des résultats.",
   },
   {
-    name: "John doe",
-    avatarUrl: "",
+    name: "Noam Boulanger",
+    avatarUrl: "/assets/images/man1.jpg",
     description:
-      "Mollit ipsum anim aliquip ad proident laborum amet cillum enim ex ipsum. Eiusmod consequat Lorem est laboris aliqua quis laborum laborum dolor voluptate ut Lorem. Est ea quis nisi aute sunt excepteur consequat sint est quis. Tempor quis consectetur ad voluptate adipisicing ad ea. Fugiat anim do veniam ullamco mollit excepteur eu do nisi exercitation ut fugiat sint deserunt. Eu nostrud minim ad deserunt dolore laboris occaecat. Aliqua eu consequat enim irure fugiat incididunt fugiat sit adipisicing esse proident nisi.",
+      "JDA Diffusion a complètement transformé la visibilité de mon restaurant en ligne. Grâce à leurs stratégies précises et à leur gestion des réseaux sociaux, mon chiffre d’affaires a bondi en quelques mois. Merci pour votre professionnalisme et votre écoute !",
   },
   {
-    name: "John doe",
-    avatarUrl: "",
+    name: "Sonia Chabert",
+    avatarUrl: "/assets/images/avatar1.jpg",
     description:
-      "Mollit ipsum anim aliquip ad proident laborum amet cillum enim ex ipsum. Eiusmod consequat Lorem est laboris aliqua quis laborum laborum dolor voluptate ut Lorem. Est ea quis nisi aute sunt excepteur consequat sint est quis. Tempor quis consectetur ad voluptate adipisicing ad ea. Fugiat anim do veniam ullamco mollit excepteur eu do nisi exercitation ut fugiat sint deserunt. Eu nostrud minim ad deserunt dolore laboris occaecat. Aliqua eu consequat enim irure fugiat incididunt fugiat sit adipisicing esse proident nisi.",
+      "En tant que propriétaire d’un salon de coiffure, j’avais besoin d’aide pour ma communication digitale. L’équipe de JDA Diffusion a su mettre en valeur mon activité avec des visuels modernes et une stratégie parfaitement adaptée à ma clientèle. Un service au top !",
   },{
-    name: "John doe",
-    avatarUrl: "",
+    name: "Malik Vaurin",
+    avatarUrl: "/assets/images/man2.jpg",
     description:
-      "Mollit ipsum anim aliquip ad proident laborum amet cillum enim ex ipsum. Eiusmod consequat Lorem est laboris aliqua quis laborum laborum dolor voluptate ut Lorem. Est ea quis nisi aute sunt excepteur consequat sint est quis. Tempor quis consectetur ad voluptate adipisicing ad ea. Fugiat anim do veniam ullamco mollit excepteur eu do nisi exercitation ut fugiat sint deserunt. Eu nostrud minim ad deserunt dolore laboris occaecat. Aliqua eu consequat enim irure fugiat incididunt fugiat sit adipisicing esse proident nisi.",
+      "Depuis que JDA Diffusion s’occupe de ma stratégie digitale, je vois une vraie différence. Mon site attire plus de visiteurs et mes publications sur les réseaux sociaux génèrent beaucoup d’interactions. Je ne regrette pas de leur avoir fait confiance.",
   },
 ];
 
@@ -61,7 +61,7 @@ function Avis() {
               >
                 <Image
                   className={style.avatar}
-                  src="/assets/images/man1.jpg"
+                  src={avis.avatarUrl}
                   width={50}
                   height={50}
                   alt="avatar"
