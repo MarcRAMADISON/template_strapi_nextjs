@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   
   return (
     <>
-    
+      <script src="//code.tidio.co/xgvwgigvnan49mskqlhcxou1gsetogvm.js" async></script>
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-LV4ERZY102"></Script>
       <Script id="google-analytics" strategy="afterInteractive">
         {`window.dataLayer = window.dataLayer || [];
