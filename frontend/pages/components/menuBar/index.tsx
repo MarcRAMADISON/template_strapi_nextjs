@@ -6,6 +6,51 @@ import { useState } from "react";
 function MenuBar() {
   const [showMenu, setShowMenu] = useState<boolean>(false);
 
+  const toggleMenu = () => {
+    const idMenu = document.querySelector("#menuBlockId") as any;
+    const burgerMenu = document.querySelector("#burger_menu_id");
+
+    if(burgerMenu && idMenu){
+      const spans = burgerMenu.querySelectorAll("span");
+
+      setShowMenu((prev) => {
+        if (prev) {
+          spans[0].style.transform = "";
+          spans[1].style.opacity = "";
+          spans[2].style.transform = "";
+          idMenu.style.height = "0px";
+          idMenu.style.opacity = "0";
+        } else {
+          spans[0].style.transform = "translateY(13px) rotate(45deg)";
+          spans[1].style.opacity = "0";
+          spans[2].style.transform = "translateY(-13px) rotate(-45deg)";
+          idMenu.style.height = "300px";
+          idMenu.style.opacity = "1";
+        }
+  
+        return !prev;
+      });
+    }
+
+   
+  };
+
+  const changeNavigation=(section:string)=>{
+    const idMenu = document.querySelector("#menuBlockId") as any;
+    const burgerMenu = document.querySelector("#burger_menu_id");
+
+    if(burgerMenu && idMenu){
+      handleNavigation(section)
+      const spans = burgerMenu.querySelectorAll("span");
+
+          spans[0].style.transform = "";
+          spans[1].style.opacity = "";
+          spans[2].style.transform = "";
+          idMenu.style.height = "0px";
+          idMenu.style.opacity = "0";
+        }
+  }
+
   return (
     <>
       <div className={style.upButton} onClick={()=>handleNavigation('header')}>
@@ -60,25 +105,25 @@ function MenuBar() {
       </div>
 
       <div className={style.menuMobile}>
-        <div
-          className={style.menuBarMobile}
-          onClick={(e) => setShowMenu((p) => !p)}
-        >
-          <Image
-            style={{ borderBottom: "1px solid #fff" }}
-            src="/assets/images/burger_menu.png"
-            alt="burger menu"
-            width={30}
-            height={15}
-          />
-        </div>
-        {showMenu && (
-          <div className={style.menuItemsMobile}>
+      
+             <div
+            className={style.burger_menu}
+            id="burger_menu_id"
+            onClick={toggleMenu}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        
+        
+          <div className={style.menuItemsMobile} id="menuBlockId">
             <span
               className={style.menuItem}
               onClick={(e) => {
-                handleNavigation("about");
+                changeNavigation("about");
                 setShowMenu(false);
+               
               }}
             >
               Qui nous sommes?
@@ -86,8 +131,9 @@ function MenuBar() {
             <span
               className={style.menuItem}
               onClick={(e) => {
-                handleNavigation("services");
+                changeNavigation("services");
                 setShowMenu(false);
+          
               }}
             >
               Nos services
@@ -95,8 +141,9 @@ function MenuBar() {
             <span
               className={style.menuItem}
               onClick={(e) => {
-                handleNavigation("need");
+                changeNavigation("need");
                 setShowMenu(false);
+               
               }}
             >
               Vos besoins
@@ -104,8 +151,9 @@ function MenuBar() {
             <span
               className={style.menuItem}
               onClick={(e) => {
-                handleNavigation("avis");
+                changeNavigation("avis");
                 setShowMenu(false);
+               
               }}
             >
               Avis
@@ -113,15 +161,16 @@ function MenuBar() {
             <span
               className={style.menuItem}
               onClick={(e) => {
-                handleNavigation("contact");
+                changeNavigation("contact");
                 setShowMenu(false);
+                
               }}
               style={{ color: "#f3dd52" }}
             >
               Nous contacter
             </span>
           </div>
-        )}
+        
       </div>
     </>
   );
