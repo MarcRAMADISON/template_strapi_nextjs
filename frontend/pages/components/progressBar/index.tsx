@@ -7,7 +7,8 @@ const style={
     backgroundColor:"#f3dd52",
     zIndex:'50',
     height:'100vh',
-    width:'0.6vw'
+    width:'1vw',
+    maxWidth:"10px"
 }
 
 const ProgressBar = () => {

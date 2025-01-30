@@ -87,7 +87,7 @@
     justify-content: space-between;
     cursor: pointer;
     margin-top: 20px;
-    margin-right: 10px;
+    margin-right: 20px;
   }
   
   .burger_menu span {
@@ -140,8 +140,7 @@
         justify-content: center;
         align-items: flex-end;
         border-bottom: 1px solid #fff;
-        width:95%;
-        margin-left: 2%;
+        width:100%;
         height:fit-content;
         position: fixed;
         top:0;

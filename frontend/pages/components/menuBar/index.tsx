@@ -2,7 +2,6 @@ import Image from "next/image";
 import style from "./menuBar.module.css";
 import { handleNavigation } from "../../../utils/utils";
 import { useState } from "react";
-import ProgressBar from "../progressBar";
 
 function MenuBar() {
   const [showMenu, setShowMenu] = useState<boolean>(false);
@@ -54,7 +53,6 @@ function MenuBar() {
 
   return (
     <>
-      <ProgressBar/>
       <div className={style.upButton} onClick={()=>handleNavigation('header')}>
       <Image
           src="/assets/images/upIcon.png"

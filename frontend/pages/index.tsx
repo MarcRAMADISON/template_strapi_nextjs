@@ -8,10 +8,13 @@ import Contact from "./components/contact";
 import MenuBar from "./components/menuBar";
 import Footer from "./components/footer";
 import Avis from "./components/avis/page";
+import ProgressBar from "./components/progressBar";
+
 
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
+      <ProgressBar/>
       <MenuBar />
       <Header />
       <About />
