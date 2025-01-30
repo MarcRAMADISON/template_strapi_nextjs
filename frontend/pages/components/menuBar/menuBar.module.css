@@ -15,8 +15,10 @@
 .menuItems {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     z-index: 999;
     margin-right: 100px;
+    width:80%
 }
 
 .menuItem {

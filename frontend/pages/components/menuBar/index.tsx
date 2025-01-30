@@ -2,6 +2,7 @@ import Image from "next/image";
 import style from "./menuBar.module.css";
 import { handleNavigation } from "../../../utils/utils";
 import { useState } from "react";
+import ProgressBar from "../progressBar";
 
 function MenuBar() {
   const [showMenu, setShowMenu] = useState<boolean>(false);
@@ -53,6 +54,7 @@ function MenuBar() {
 
   return (
     <>
+      <ProgressBar/>
       <div className={style.upButton} onClick={()=>handleNavigation('header')}>
       <Image
           src="/assets/images/upIcon.png"
@@ -62,13 +64,15 @@ function MenuBar() {
         />
       </div>
       <div className={style.menuContainer}>
-        <Image
-          style={{ zIndex: "999", marginLeft: "50px" }}
-          src="/assets/images/logo.png"
-          width={150}
-          height={150}
-          alt="jda logo"
-        />
+        <div style={{width:"10%",display:"flex",justifyContent:"flex-end",marginLeft: "60px"}}>
+          <Image
+            style={{ zIndex: 999,  }}
+            src="/assets/images/logo.png"
+            width={150}
+            height={150}
+            alt="jda logo"
+          />
+        </div>
         <div className={style.menuItems}>
           <div
             className={style.menuItem}
