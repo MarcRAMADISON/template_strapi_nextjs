@@ -6,6 +6,7 @@
     font-weight: bold;
     max-width: 70%;
     text-align: center;
+    margin-top: 70px;
 }
 
 .logoMobile{
@@ -43,7 +44,7 @@
 .phoneImage {
     position: absolute;
     top: 200px;
-    animation: phoneAnimation 5s linear 2;
+    animation: phoneAnimation 1s ease-in-out infinite alternate;
     width: 60vw;
     height: 60vh;
     max-height: 900px;
@@ -51,14 +52,9 @@
 
 @keyframes phoneAnimation {
     0% {
-        width: 60vw;
-        height: 60vh;
-    }50%{
-        width: 55vw;
-        height: 55vh;
+        transform: scale(1)
     }100%{
-        width: 60vw;
-        height: 60vh;
+        transform: scale(1.1)
     }
 }
 
@@ -130,3 +126,12 @@
         font-size: 1rem;
     }
 }
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
