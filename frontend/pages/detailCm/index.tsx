@@ -132,7 +132,7 @@ function DetailCm() {
                     fontStyle:"italic"
                   }}
                 >
-                  Offert jusqu&apos;au 1er février
+                  Offert jusqu&apos;au 1er Mars
                 </span>
               </div>
             </div>
@@ -237,7 +237,7 @@ function DetailCm() {
                     fontStyle:'italic'
                   }}
                 >
-                  Offert jusqu&apos;au 1er février
+                  Offert jusqu&apos;au 1er Mars
                 </span>
               </div>
             </div>
