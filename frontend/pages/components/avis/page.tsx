@@ -12,22 +12,17 @@ const avisList = [
       "Grâce à JDA Diffusion, je peux me concentrer sur mon cœur de métier sans me soucier de ma communication. Ils s’occupent de tout et le font à la perfection. Je suis ravie des résultats.",
   },
   {
-    name: "Noam Boulanger",
-    avatarUrl: "/assets/images/man1.jpg",
+    name: "Oasis des Grands Pins",
+    avatarUrl: "/assets/images/logo_grands_pins.jpg",
     description:
-      "JDA Diffusion a complètement transformé la visibilité de mon restaurant en ligne. Grâce à leurs stratégies précises et à leur gestion des réseaux sociaux, mon chiffre d’affaires a bondi en quelques mois. Merci pour votre professionnalisme et votre écoute !",
+      "Un immense merci à JDA Diffusion pour leur expertise et leur accompagnement ! Grâce à leurs conseils stratégiques et leur approche personnalisée, mes ventes ont connu un vrai coup de boost. Leur professionnalisme, leur écoute et leurs solutions sur-mesure font toute la différence. Je recommande à 100 % pour tous ceux qui veulent optimiser leur performance commerciale !",
   },
   {
     name: "Sonia Chabert",
     avatarUrl: "/assets/images/avatar1.jpg",
     description:
       "En tant que propriétaire d’un salon de coiffure, j’avais besoin d’aide pour ma communication digitale. L’équipe de JDA Diffusion a su mettre en valeur mon activité avec des visuels modernes et une stratégie parfaitement adaptée à ma clientèle. Un service au top !",
-  },{
-    name: "Malik Vaurin",
-    avatarUrl: "/assets/images/man2.jpg",
-    description:
-      "Depuis que JDA Diffusion s’occupe de ma stratégie digitale, je vois une vraie différence. Mon site attire plus de visiteurs et mes publications sur les réseaux sociaux génèrent beaucoup d’interactions. Je ne regrette pas de leur avoir fait confiance.",
-  },
+  }
 ];
 
 const styling: CSSProperties = {
