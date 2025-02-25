@@ -29,7 +29,7 @@ function Services() {
               sociaux
             </span>
             <div className={style.cardDescription}>
-              <span>
+              <span style={{color:"#fff"}}>
                 Les réseaux sociaux sont clés pour créer une communauté et
                 booster votre notoriété. Jda Diffusion élabore des stratégies
                 sur mésure pour vous faire briller sur les plateformes
@@ -52,7 +52,7 @@ function Services() {
               Création de sites web sur mesure
             </span>
             <div className={style.cardDescription}>
-              <span>
+              <span style={{color:"#fff"}}>
                 Chez Jda Diffusion, nous savons qu&apos;un site web est bien
                 plus qu&apos;une simple vitrine en ligne, un outil puissant pour
                 attirer, informer et convertir vos visiteurs en clients.

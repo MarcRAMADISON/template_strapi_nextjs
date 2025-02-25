@@ -32,12 +32,13 @@
 
 .cardTitle {
     color: #f3dd52;
-    font-size: 1.5rem
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .cardDescription {
     font-size: 1rem;
-    background-color: #62dfbf;
+    background: linear-gradient(90deg, rgba(73, 172, 101, 1) 0%, rgba(6, 124, 119, 1) 100%);
     padding: 30px;
     border-radius: 20px;
     margin-top: 30px;
@@ -47,36 +48,34 @@
     z-index: 1;
 }
 
-.cardDescription:hover .overlay{
-    height:100%;
+.cardDescription:hover .overlay {
+    height: 100%;
     opacity: 1;
 }
 
-.overlay{
+.overlay {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255,255,255,0.7);
+    background: linear-gradient(90deg, rgba(73, 172, 101, 1) 0%, rgba(6, 124, 119, 1) 100%);
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     z-index: 999;
-    width:100%;
+    width: 100%;
     border-radius: 20px;
     height: 0;
     opacity: 0;
     transition: all ease-in 0.5s;
 }
 
-.buttonDetail{
+.buttonDetail {
     font-weight: bold;
     font-size: 1rem;
     z-index: 99;
-    color: #000;
+    color: #fff;
     background: none;
-    border-color: #000;
-    border-radius: 10%;
-    padding: 20px 40px;
+    border: none;
     cursor: pointer;
     transition: all ease-in 0.5s;
 }
@@ -109,7 +108,7 @@
     color: #000;
 }
 
-.detailAction{
+.detailAction {
     place-self: left;
     font-weight: bold;
     font-size: 1.1rem;
@@ -121,7 +120,7 @@
     padding: 10px 0px;
     cursor: pointer;
     transition: all ease-in 0.5s;
-    width:'100%';
+    width: '100%';
     margin-top: 10px;
     text-transform: uppercase;
 }
@@ -145,21 +144,26 @@
     .subTitle {
         font-size: 1.3rem
     }
-    .cardDescription{
+
+    .cardDescription {
         font-size: 0.8rem;
     }
-    .contactButton{
+
+    .contactButton {
         bottom: -10vh;
     }
-    .cardContainer{
-        gap:20px
+
+    .cardContainer {
+        gap: 20px
     }
-    .buttonDetail{
+
+    .buttonDetail {
         font-size: 0.9rem;
         padding: 10px 20px;
-        
+
     }
-    .detailAction{
+
+    .detailAction {
         font-size: 0.9rem;
     }
 
@@ -167,9 +171,10 @@
 
 
 @media screen and (max-width:1080px) {
-    .contactButton{
+    .contactButton {
         bottom: -50px;
     }
+
     .title {
         font-size: 1.5rem;
     }
@@ -181,34 +186,39 @@
     .subTitle {
         font-size: 1rem
     }
-    .imageServices{
+
+    .imageServices {
         display: none;
     }
-    .blockText{
+
+    .blockText {
         margin: 0;
         align-items: center;
     }
-    .detailAction{
+
+    .detailAction {
         font-size: 0.9rem;
     }
-    
+
 }
 
 @media screen and (max-width:600px) {
-    .cardContainer{
+    .cardContainer {
         grid-template-columns: 100%;
     }
-    .detailAction{
+
+    .detailAction {
         font-size: 0.9rem;
     }
 
 }
 
 @media screen and (max-width:400px) {
-    .serviceContainer{
+    .serviceContainer {
         background: none !important;
     }
-    .detailAction{
+
+    .detailAction {
         font-size: 0.9rem;
     }
 

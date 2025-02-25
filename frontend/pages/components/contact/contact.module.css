@@ -77,12 +77,11 @@
 @media  screen and (max-width:1280px) and (min-width:1080px) {
     .lineBlock{
         width:90%;
-    padding: 0px 2%;
+        padding: 0px 2%;
         gap:30px
     }
     .inputBlock{
         width:90%;
-    padding: 0px 2%;
         gap:30px;
     }
 
@@ -96,11 +95,10 @@
    .lineBlock{
     grid-template-columns: repeat(2,1fr);
     width:100%;
-    padding: 0px 2%;
+    
    }
    .inputBlock{
     width:100%;
-    padding: 0px 2%;
    }
    .message{
     width:90%;
@@ -116,9 +114,11 @@
     .inputBlock{
         column-gap: 0;
         row-gap:20px;
+        align-items: center;
     }
     .inputLine{
         max-width: 80%;
+        place-self: center;
     }
     .inputText{
         font-size: 0.8rem;

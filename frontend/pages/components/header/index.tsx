@@ -2,6 +2,7 @@ import style from "./header.module.css";
 import { CSSProperties } from "react";
 import { handleNavigation } from "../../../utils/utils";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const styling: CSSProperties = {
   display: "flex",
@@ -14,6 +15,9 @@ const styling: CSSProperties = {
   height: "90vh",
   position: "relative",
 };
+
+const texts="Laissez-nous faire briller votre entreprise !"
+const letters= texts.split('')
 
 function Header() {
   return (
@@ -36,9 +40,19 @@ function Header() {
           height={200}
         />
       </div>
-      <span className={style.headerTitle}>
-        Laissez-nous faire briller votre entreprise !
-      </span>
+      <div className={style.headerTitle}>
+      {letters.map((letter, index) => (
+        <motion.span
+          key={index}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: index * 0.05 }}
+          
+        >
+          {letter}
+        </motion.span>
+      ))}
+    </div>
       <button
         className={style.contactButton}
         onClick={() => handleNavigation("contact")}

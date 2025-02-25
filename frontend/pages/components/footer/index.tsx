@@ -10,7 +10,7 @@ function Footer() {
         justifyContent: "center",
         alignItems: "center",
         width: "100%",
-        backgroundColor: "#62dfbf",
+        background: "linear-gradient(90deg, rgba(73,172,101,1) 0%, rgba(6,124,119,1) 100%)",
         height: "150px",
       }}
     >
