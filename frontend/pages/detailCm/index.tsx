@@ -18,6 +18,7 @@ function DetailCm() {
     width: "100%",
     maxWidth: "1920px",
     height: "100%",
+    minHeight:"100vh",
     backgroundSize: "cover",
     placeSelf: "center",
     position: "relative",
