@@ -98,6 +98,7 @@ function DetailCm() {
                     fontSize: "1rem",
                     marginLeft: "10px",
                     fontWeight: "bold",
+                    textDecoration:"line-through"
                   }}
                 >
                   500€ HT/mois
@@ -133,7 +134,37 @@ function DetailCm() {
                     fontStyle:"italic"
                   }}
                 >
-                  Offert jusqu&apos;au 1er Avril
+                  Offert
+                </span>
+              </div>
+              <div style={{ display: "flex", marginTop: "25px",flexWrap:"wrap", border: '1px #f3dd52 solid',padding:'30px' }}>
+              <span
+                  style={{
+                    color: "#fff",
+                    fontSize: "1rem",
+                    fontWeight: "bold",
+                  }}
+                >
+                  🔥📢 Promotion :
+                </span>
+                <span
+                  style={{
+                    color: "#f3dd52",
+                    fontSize: "1rem",
+                    marginLeft: "10px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  275€ HT
+                </span>
+                <span
+                  style={{
+                    color: "#fff",
+                    fontSize: "1rem",
+                    marginLeft:'15px'
+                  }}
+                >
+                  Offre access + site de réservation offert
                 </span>
               </div>
             </div>
@@ -238,7 +269,7 @@ function DetailCm() {
                     fontStyle:'italic'
                   }}
                 >
-                  Offert jusqu&apos;au 1er Avril
+                  Offert
                 </span>
               </div>
             </div>
