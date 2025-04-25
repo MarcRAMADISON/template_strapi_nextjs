@@ -32,7 +32,7 @@ function Services() {
               <span style={{color:"#fff"}}>
                 Les réseaux sociaux sont clés pour créer une communauté et
                 booster votre notoriété. Jda Diffusion élabore des stratégies
-                sur mésure pour vous faire briller sur les plateformes
+                sur mesure pour vous faire briller sur les plateformes
                 incontournables comme Facebook, Instagram, LinkedIn ou Tik Tok
                 ....
               </span>
