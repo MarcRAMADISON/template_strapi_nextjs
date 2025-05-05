@@ -24,7 +24,9 @@
 @media  (max-width:600px) {
   .container{
     padding:0;
-    width:100%;
+    width:95%;
+    place-self: center;
+    margin: auto;
   }
 }
 

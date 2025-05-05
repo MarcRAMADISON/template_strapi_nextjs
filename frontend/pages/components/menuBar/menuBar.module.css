@@ -7,6 +7,8 @@
     background-color: #fff;
     position:fixed;
     z-index: 999;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    max-width: 1920px;
 }
 
 .menuItems{
@@ -14,6 +16,7 @@
     justify-content: space-around;
     width: 50vw;
     min-width: 800px;
+    max-width: 1000px;
 }
 
 .item{
@@ -32,4 +35,115 @@
     border-top:1px #000 solid;
     border-left:1px #000 solid;
 
+}
+
+.mobileContainer{
+    width:100vw;
+    height: 80px;
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: #fff;
+    z-index: 999;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+.burgerContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .burgerButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 20px;
+  }
+  
+  .line {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  .line:nth-child(1) {
+    transform-origin: top left;
+  }
+  
+  .line:nth-child(3) {
+    transform-origin: bottom left;
+  }
+  
+  .open:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  
+  .open:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .open:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  
+  .menu {
+    position: fixed;
+    top: 80px;
+    left: 0px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: flex;
+    padding: 20px;
+    max-width: 500px;
+    width: 0px;
+    opacity:0;
+    z-index: 999;
+    transition: all 0.8s ease-in;
+    
+  }
+  
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+    min-width: 200px;
+  }
+  
+  .menu ul li {
+    margin: 20px 0;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    display: block;
+  }
+
+
+@media (max-width:1380px){
+    .container{
+        height:100px;
+    }
+}
+
+@media (max-width:1080px){
+    .container{
+        display: none;
+    }
+    .mobileContainer{
+        display: flex;
+    }
 }

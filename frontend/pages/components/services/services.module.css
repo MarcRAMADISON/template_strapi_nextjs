@@ -3,6 +3,7 @@
     margin: 0px 5vw;
     width:85vw;
     height:500px;
+    max-width: 1920px;
     display:grid;
     grid-template-columns: repeat(3,1fr);
     padding: 50px 0px;
@@ -40,7 +41,7 @@
 .description{
     color:#002d3e;
     font-size: 1.1rem;
-    width:70%;
+    width:80%;
     font-weight: 400;
     word-spacing: 2px;
     line-height: 25px;
@@ -62,4 +63,39 @@
     padding: 10px 20px;
     font-size: 1rem;
     text-align: center;
+}
+
+@media (max-width:1380px){
+    .cardTitle{
+        font-size: 1.4rem;   
+    }
+    .note{
+        width:80%;
+    }
+    .button{
+        width:80%;
+    }
+    .cardTitle{
+        max-width: 80%;
+    }
+}
+
+@media (max-width:1080px){
+    .container{
+        grid-template-columns: 100%;
+        height:fit-content;
+        row-gap:80px
+    }
+    .imageContainer{
+        width:300px;
+        height:200px;
+    }
+    .block3, .card{
+        max-width: 400px;
+        margin: auto;
+        place-self: center;
+    }
+    .block3{
+        margin-top:-20px
+    }
 }

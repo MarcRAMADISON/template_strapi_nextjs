@@ -5,6 +5,7 @@ import MenuBar from "./components/menuBar/page";
 import Presentation from "./components/presentation/page";
 import Service from "./components/services/page";
 import Avis from "./components/avis/page";
+import Devis from "./components/devis/page";
 
 
 
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       <Presentation/>
       <Service/>
       <Avis/>
+      <Devis/>
     </div>
   );
 };
