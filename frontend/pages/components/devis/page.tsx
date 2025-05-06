@@ -4,7 +4,7 @@ import Animation from "../animation/page";
 
 function Devis() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="CONTACT">
       <Animation className={styles.form} animation="fadeInRight">
         <div className={styles.twoLineContainer}>
           <div className={styles.field}>

@@ -4,7 +4,7 @@ import Animation from "../animation/page";
 
 function Presentation() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='ABOUT'>
       <Animation className={styles.block1} animation="fadeInRight">
         <h1 className={styles.title}>Qui nous sommes ?</h1>
         <h2 className={styles.subTitle}>

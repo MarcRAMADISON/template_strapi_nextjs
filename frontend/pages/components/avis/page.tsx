@@ -4,7 +4,7 @@ import Animation from "../animation/page";
 
 function Avis() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='AVIS'>
       <h1 className={styles.title}>Ce que disent nos clients sur nous :</h1>
       <div className={styles.containerCard}>
         <Animation className={styles.card} animation='fadeInRight'>

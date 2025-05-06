@@ -1,10 +1,14 @@
 import Image from "next/image";
 import styles from "./services.module.css";
 import Animation from "../animation/page";
+import { useRouter } from "next/router";
 
 function Service() {
+
+  const route= useRouter()
+
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="SERVICES">
       <Animation className={styles.card} animation='fadeInDown'>
           <h1 className={styles.cardTitle}>Gestion des réseaux sociaux</h1>
         <div className={styles.imageContainer}>
@@ -16,7 +20,7 @@ function Service() {
             objectPosition="50% 50%"
           />
         </div>
-        <div className={styles.button}>Détail</div>
+        <div className={styles.button} onClick={()=>route.push('/detailCM')}>Détail</div>
       </Animation>
       <Animation className={styles.card} animation='fadeInUp'>
         <h1 className={styles.cardTitle}>Création de sites web sur mesure</h1>
@@ -29,7 +33,7 @@ function Service() {
             objectPosition="50% 50%"
           />
         </div>
-        <div className={styles.button}>Détail</div>
+        <div className={styles.button} onClick={()=>route.push('/detailCM')}>Détail</div>
       </Animation>
       <Animation className={styles.block3} animation="fadeInDown">
         <h3 className={styles.description}>

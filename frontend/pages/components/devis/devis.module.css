@@ -1,5 +1,5 @@
 .container{
-    background: linear-gradient(240deg,rgba(170, 239, 242, 1) 0%, rgba(255, 255, 255, 1) 100%);    
+    background: linear-gradient(230deg,rgba(170, 239, 242, 1) 0%, rgba(255, 255, 255, 1) 100%);    
     width:100vw;
     height:88vh;
     min-height: 700px;
@@ -42,7 +42,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    width:100%;
+    width:90%;
     max-width: 600px;
     margin: auto auto auto 20vw ;
     place-self: right;
