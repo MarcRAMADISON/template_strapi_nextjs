@@ -7,12 +7,14 @@ export default function Animation({
   children,
   animation,
   className,
-  style
+  style,
+  onClick
 }: {
   children: any;
   animation: string;
   className?: any;
-  style?:any
+  style?:any;
+  onClick?:any
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -46,6 +48,7 @@ export default function Animation({
           ? styles.fadeInLeft
           : styles.fadeInDown
       } ${isVisible ? styles.visible : ""}`}
+      onClick={onClick || null}
     >
       {children}
     </div>

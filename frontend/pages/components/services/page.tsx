@@ -9,7 +9,7 @@ function Service() {
 
   return (
     <div className={styles.container} id="SERVICES">
-      <Animation className={styles.card} animation='fadeInDown'>
+      <Animation className={styles.card} animation='fadeInDown'  onClick={()=>route.push('/detailCM')}>
           <h1 className={styles.cardTitle}>Gestion des réseaux sociaux</h1>
         <div className={styles.imageContainer}>
           <Image
@@ -20,9 +20,9 @@ function Service() {
             objectPosition="50% 50%"
           />
         </div>
-        <div className={styles.button} onClick={()=>route.push('/detailCM')}>Détail</div>
+        <div className={styles.button}>Détail</div>
       </Animation>
-      <Animation className={styles.card} animation='fadeInUp'>
+      <Animation className={styles.card} animation='fadeInUp'  onClick={()=>route.push('/detailDW')}>
         <h1 className={styles.cardTitle}>Création de sites web sur mesure</h1>
         <div className={styles.imageContainer}>
           <Image
@@ -33,7 +33,7 @@ function Service() {
             objectPosition="50% 50%"
           />
         </div>
-        <div className={styles.button} onClick={()=>route.push('/detailDW')}>Détail</div>
+        <div className={styles.button}>Détail</div>
       </Animation>
       <Animation className={styles.block3} animation="fadeInDown">
         <h3 className={styles.description}>
