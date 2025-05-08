@@ -108,13 +108,13 @@
   .menu {
     position: fixed;
     top: 80px;
-    left: 0px;
+    left: -400px;
     background-color: #fff;
     border: 1px solid #ccc;
     display: flex;
     padding: 20px;
     max-width: 500px;
-    width: 0px;
+    width: 400px;
     opacity:0;
     z-index: 999;
     transition: all 0.8s ease-in;

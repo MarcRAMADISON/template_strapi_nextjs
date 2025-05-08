@@ -76,7 +76,7 @@ function MenuBar({outPage}:{outPage?:boolean}) {
             className={`${styles.menu}`}
             style={{
               opacity: isOpen ? "1" : "0",
-              width: isOpen ? "100%" : "0px",
+              left: isOpen ? "0" : "-400px",
             }}
           >
             <ul>

@@ -15,7 +15,7 @@ export const accessOffre = [
   "Création de la ligne éditoriale: élaboration du planning de publication avec contenu textuel et visuel",
   "Feedback sur les résultats obtenus chaque fin du mois",
   "Tarif :500€ HT/mois",
-  "Frais de démarrage :1000€ HTOffert",
+  "Frais de démarrage :1000€ HT Offert",
 ];
 
 export const premiumOffre = [

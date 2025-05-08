@@ -2,6 +2,9 @@ import Image from "next/image";
 import styles from "./devis.module.css";
 import Animation from "../animation/page";
 import { useState } from "react";
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
+
 
 interface inputObject {
   nom: string;
@@ -16,25 +19,59 @@ interface inputObject {
   message: string;
 }
 
+const defaultValues={
+  nom: "",
+  prenom: "",
+  typeEntreprise: "Restaurant",
+  nomEntreprise: "",
+  telephone: "",
+  email: "",
+  pays: "",
+  ville: "",
+  codePostal: "",
+  message: "",
+}
+
 function Devis() {
-  const [values, setValues] = useState<inputObject>({
-    nom: "",
-    prenom: "",
-    typeEntreprise: "Restaurant",
-    nomEntreprise: "",
-    telephone: "",
-    email: "",
-    pays: "",
-    ville: "",
-    codePostal: "",
-    message: "",
-  });
+  const [loading,setLoading]=useState<boolean>(false)
+  const [values, setValues] = useState<inputObject>(defaultValues);
 
   const handleChange = (e: any) => {
     e.preventDefault();
 
     setValues((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
+
+  const handleSend = () => {
+    if (values) {
+      setLoading(true)
+      emailjs.init("o_JY9sgqyH7Sdqek7");
+
+      emailjs.send("service_rcyzudb", "template_ksy3c3t", values as any).then(
+        (response) => {
+          Swal.fire({
+            title: "Message envoyé!",
+            text: "Votre message a été envoyé avec success, on reviendra vers vous le plus tôt possible.",
+            icon: "success",
+            confirmButtonColor:"#94F9FF",
+          });
+          setValues(defaultValues);
+          setLoading(false)
+        },
+        (error) => {
+          Swal.fire({
+            title: "Erreur de l'envoie de votre message!",
+            text: "Votre message n'a pas été envoyer",
+            icon: "error",
+            confirmButtonColor:"#94F9FF",
+          });
+          setLoading(false)
+        }
+      );
+    }
+  };
+
+  console.log('loading',loading)
 
   const showBtn=values.nomEntreprise && values.typeEntreprise && values.telephone && values.email
 
@@ -174,14 +211,15 @@ function Devis() {
         </div>
         <div className={styles.fieldMessage}>
           <h3 className={styles.label}>Message:</h3>
-          <input
+          <textarea
             className={styles.inputMessage}
             name="message"
             value={values.message}
             onChange={handleChange}
+            rows={10}
           />
         </div>
-        <div className={styles.bouton} style={{opacity: showBtn? 1 : 0}}>Envoyer</div>
+        <button className={styles.bouton} style={{opacity: showBtn? 1 : 0}} onClick={handleSend} disabled={loading} >{loading? "..." : "Envoyer"}</button>
       </Animation>
       <Animation className={styles.contactCard} animation="fadeInLeft">
         <h1 className={styles.cardTitle}>
@@ -238,30 +276,38 @@ function Devis() {
           />
         </div>
         <div className={styles.buttonContainer}>
+          <a href="https://www.facebook.com/profile.php?id=61569910295845" target="_blank" rel="noreferrer">
           <Image
             src="/assets/images/facebook.png"
             width={50}
             height={50}
             alt="facebook link"
           />
+          </a>
+          <a href="https://www.instagram.com/jdadiffusion/" target="_blank" rel="noreferrer">
           <Image
             src="/assets/images/instagram.png"
             width={50}
             height={50}
             alt="instagram link"
           />
+          </a>
+          <a href="https://www.tiktok.com/following" target="_blank" rel="noreferrer">
           <Image
             src="/assets/images/tik_tok.png"
             width={50}
             height={50}
             alt="tik tok link"
           />
+          </a>
+          <a href="https://www.linkedin.com/in/joao-de-almeida-jda-diffusion-7149a71/recent-activity/all/" target="_blank" rel="noreferrer">
           <Image
             src="/assets/images/linkedin.png"
             width={50}
             height={50}
             alt="linkedin link"
           />
+          </a>
         </div>
       </Animation>
     </div>

@@ -126,6 +126,7 @@
     border-radius: 13px;
     border: 2px solid #002d3e;
     width:100%;
+    padding: 5px;
 }
 .buttonContainer{
     display: flex;
@@ -146,6 +147,9 @@
     opacity:0;
     transition: opacity 0.5s ease-in;
     cursor: pointer;
+    box-shadow: none;
+    border: none;
+    min-width: 120px;
 }
 
 @media (min-width:1921px){
