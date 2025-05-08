@@ -1,23 +1,36 @@
-# Utiliser l'image Node.js officielle LTS
-FROM node:18
+# Dockerfile
+# Use node alpine as it's a small node image
+FROM node:18-alpine
+ARG NODE_ENV
 
-# Définir le répertoire de travail
+ENV PORT 3005
+
+# Create the directory on the node image 
+# where our Next.js app will live
+RUN mkdir -p /app
+
+# Set /app as the working directory
 WORKDIR /app
 
-# Copier les fichiers package.json et yarn.lock pour installer les dépendances
-COPY package.json yarn.lock ./
+# Copy package.json and package-lock.json
+# to the /app working directory
+COPY ./frontend/package*.json /app/
+COPY ./.env /app/
 
-# Installer les dépendances
-RUN yarn install
+# Install dependencies in /app
+RUN yarn config set network-timeout 600000 -g && yarn install
 
-# Copier tout le code source dans le conteneur
-COPY . .
+# Copy the rest of our Next.js folder into /app
+COPY ./frontend /app
 
-# Construire le projet Next.js
+# For production build
+ENV NODE_ENV=${NODE_ENV}
+
+# Build app
 RUN yarn build
 
-# Exposer le port sur lequel Next.js va écouter
-EXPOSE 3000
+# Ensure port 3005 is accessible to our system
+EXPOSE 3005
 
-# Démarrer l'application
-CMD ["yarn", "start"]
+# Run yarn dev, as we would via the command line 
+CMD [ "yarn", "start" ]
