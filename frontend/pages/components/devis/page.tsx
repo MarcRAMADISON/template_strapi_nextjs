@@ -3,90 +3,185 @@ import styles from "./devis.module.css";
 import Animation from "../animation/page";
 import { useState } from "react";
 
-interface inputObject{
-  nom:string,
-  prenom:string,
-  typeEntreprise:string,
-  nomEntreprise:string,
-  telephone:string,
-  email:string,
-  pays:string,
-  ville:string,
-  codePostal:string,
-  message:string
+interface inputObject {
+  nom: string;
+  prenom: string;
+  typeEntreprise: string;
+  nomEntreprise: string;
+  telephone: string;
+  email: string;
+  pays: string;
+  ville: string;
+  codePostal: string;
+  message: string;
 }
 
 function Devis() {
-  const [showBtn,setShowBtn]=useState<boolean>(false)
-  const [values,setValues]=useState<inputObject>({
-    nom:"",
-    prenom:"",
-    typeEntreprise:"",
-    nomEntreprise:"",
-    telephone:"",
-    email:"",
-    pays:"",
-    ville:"",
-    codePostal:"",
-    message:""
-  })
+  const [values, setValues] = useState<inputObject>({
+    nom: "",
+    prenom: "",
+    typeEntreprise: "Restaurant",
+    nomEntreprise: "",
+    telephone: "",
+    email: "",
+    pays: "",
+    ville: "",
+    codePostal: "",
+    message: "",
+  });
 
-  const handleChange=(e:any)=>{
-    e.preventDefault()
+  const handleChange = (e: any) => {
+    e.preventDefault();
 
-    setValues((prev)=>({...prev,[e.target.name]:e.target.value}))
-  }
+    setValues((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
 
-  console.log('values',values)
+  const showBtn=values.nomEntreprise && values.typeEntreprise && values.telephone && values.email
+
   return (
     <div className={styles.container} id="CONTACT">
       <Animation className={styles.form} animation="fadeInRight">
         <div className={styles.twoLineContainer}>
           <div className={styles.field}>
-            <h3 className={styles.label} style={{width:'107%'}}>Nom</h3>
-            <input className={styles.inputField} name='nom' value={values.nom} onChange={handleChange}/>
+            <h3 className={styles.label} style={{ width: "107%" }}>
+              Nom
+            </h3>
+            <input
+              className={styles.inputField}
+              name="nom"
+              value={values.nom}
+              onChange={handleChange}
+            />
           </div>
           <div className={styles.field}>
-            <h3 className={styles.label} style={{width:'80%'}}>Prénom</h3>
-            <input className={styles.inputField}  name='prenom' value={values.prenom} onChange={handleChange}/>
+            <h3 className={styles.label} style={{ width: "80%" }}>
+              Prénom
+            </h3>
+            <input
+              className={styles.inputField}
+              name="prenom"
+              value={values.prenom}
+              onChange={handleChange}
+            />
           </div>
           <div className={styles.field}>
-            <h3 className={styles.label} style={{width:'107%'}}>Type d&apos;entreprise * :</h3>
-            <input className={styles.inputField} name="typeEntreprise" value={values.typeEntreprise} onChange={handleChange}/>
+              <label
+                className={styles.label}
+                htmlFor="etablissement-select"
+                style={{marginTop:'14px'}}
+              >
+                Type d&apos;entreprise * :
+              </label>
+              <select
+                style={{
+                  background: "#fff",
+                  borderRadius: "10px",
+                  color: "#000",
+                  border: "1px solid #000",
+                  padding: "10px",
+                }}
+                className={styles.inputField}
+                name="typeEntreprise"
+                value={values.typeEntreprise}
+                onChange={handleChange}
+                id="etablissement-select"
+              >
+                <option style={{ backgroundColor: "#fff" }} value="Restaurant">
+                  Restaurant
+                </option>
+                <option style={{ backgroundColor: "#fff" }} value="Hotel">
+                  Hotel
+                </option>
+                <option
+                  style={{ backgroundColor: "#fff" }}
+                  value="Salon de coiffure"
+                >
+                  Salon de coiffure
+                </option>
+                <option
+                  style={{ backgroundColor: "#fff" }}
+                  value="Institut de Bien être"
+                >
+                  Institut de Bien être
+                </option>
+                <option style={{ backgroundColor: "#fff" }} value="Autre">
+                  Autre
+                </option>
+              </select>
           </div>
           <div className={styles.field}>
-            <h3 className={styles.label} style={{width:'80%'}}>Nom de l&apos;entreprise * :</h3>
-            <input className={styles.inputField}  name="nomEntreprise" value={values.nomEntreprise} onChange={handleChange}/>
+            <h3 className={styles.label} style={{ width: "80%" }}>
+              Nom de l&apos;entreprise * :
+            </h3>
+            <input
+              className={styles.inputField}
+              name="nomEntreprise"
+              value={values.nomEntreprise}
+              onChange={handleChange}
+            />
           </div>
           <div className={styles.field}>
-            <h3 className={styles.label} style={{width:'107%'}}>Numero téléphone:</h3>
-            <input className={styles.inputField} name="telephone" value={values.telephone} onChange={handleChange}/>
+            <h3 className={styles.label} style={{ width: "107%" }}>
+              Numero téléphone * :
+            </h3>
+            <input
+              className={styles.inputField}
+              name="telephone"
+              value={values.telephone}
+              onChange={handleChange}
+            />
           </div>
           <div className={styles.field}>
-            <h3 className={styles.label} style={{width:'80%'}}>Adresse e-mail:</h3>
-            <input className={styles.inputField} name="email" value={values.email} onChange={handleChange}/>
+            <h3 className={styles.label} style={{ width: "80%" }}>
+              Adresse e-mail * :
+            </h3>
+            <input
+              className={styles.inputField}
+              name="email"
+              value={values.email}
+              onChange={handleChange}
+            />
           </div>
         </div>
         <div className={styles.threeLineContainer}>
           <div className={styles.field}>
             <h3 className={styles.label}>Pays:</h3>
-            <input className={styles.inputField} name="pays" value={values.pays} onChange={handleChange}/>
+            <input
+              className={styles.inputField}
+              name="pays"
+              value={values.pays}
+              onChange={handleChange}
+            />
           </div>
           <div className={styles.field}>
             <h3 className={styles.label}>Ville:</h3>
-            <input className={styles.inputField} name="ville" value={values.ville} onChange={handleChange}/>
+            <input
+              className={styles.inputField}
+              name="ville"
+              value={values.ville}
+              onChange={handleChange}
+            />
           </div>
           <div className={styles.field}>
             <h3 className={styles.label}>Code postal:</h3>
-            <input className={styles.inputField} name="codePostal" value={values.codePostal} onChange={handleChange}/>
+            <input
+              className={styles.inputField}
+              name="codePostal"
+              value={values.codePostal}
+              onChange={handleChange}
+            />
           </div>
         </div>
         <div className={styles.fieldMessage}>
-            <h3 className={styles.label}>Message:</h3>
-            <input className={styles.inputMessage} name="message" value={values.message} onChange={handleChange}/>
+          <h3 className={styles.label}>Message:</h3>
+          <input
+            className={styles.inputMessage}
+            name="message"
+            value={values.message}
+            onChange={handleChange}
+          />
         </div>
-        {showBtn? <div className={styles.bouton}>Envoyer</div> : <></>}
-      
+        <div className={styles.bouton} style={{opacity: showBtn? 1 : 0}}>Envoyer</div>
       </Animation>
       <Animation className={styles.contactCard} animation="fadeInLeft">
         <h1 className={styles.cardTitle}>
@@ -132,8 +227,8 @@ function Devis() {
             width: "100%",
           }}
         >
-          <h3 className={styles.contactText} style={{marginRight:"6px"}}>
-          1 rue Léon Bourgeois 28100 Dreux
+          <h3 className={styles.contactText} style={{ marginRight: "6px" }}>
+            1 rue Léon Bourgeois 28100 Dreux
           </h3>
           <Image
             src="/assets/images/localisation.png"
@@ -142,9 +237,7 @@ function Devis() {
             height={25}
           />
         </div>
-        <div
-          className={styles.buttonContainer}
-        >
+        <div className={styles.buttonContainer}>
           <Image
             src="/assets/images/facebook.png"
             width={50}

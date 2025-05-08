@@ -143,6 +143,9 @@
     place-self: start;
     color: #0b4276;
     font-weight: bold;
+    opacity:0;
+    transition: opacity 0.5s ease-in;
+    cursor: pointer;
 }
 
 @media (min-width:1921px){
