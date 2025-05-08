@@ -1,28 +1,24 @@
 import type { NextPage } from "next";
 import styles from "../styles/Home.module.css";
-import Header from "./components/header";
-import About from "./components/about";
-import Services from "./components/services";
-import Need from "./components/need";
-import Contact from "./components/contact";
-import MenuBar from "./components/menuBar";
-import Footer from "./components/footer";
+import Welcome from "./components/welcome/page";
+import MenuBar from "./components/menuBar/page";
+import Presentation from "./components/presentation/page";
+import Service from "./components/services/page";
 import Avis from "./components/avis/page";
-import ProgressBar from "./components/progressBar";
+import Devis from "./components/devis/page";
+
+
 
 
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
-      <ProgressBar/>
-      <MenuBar />
-      <Header />
-      <About />
-      <Services />
-      <Need />
+      <MenuBar/>
+      <Welcome/>
+      <Presentation/>
+      <Service/>
       <Avis/>
-      <Contact />
-      <Footer/>
+      <Devis/>
     </div>
   );
 };
