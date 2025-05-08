@@ -33,7 +33,7 @@ function Service() {
             objectPosition="50% 50%"
           />
         </div>
-        <div className={styles.button} onClick={()=>route.push('/detailCM')}>Détail</div>
+        <div className={styles.button} onClick={()=>route.push('/detailDW')}>Détail</div>
       </Animation>
       <Animation className={styles.block3} animation="fadeInDown">
         <h3 className={styles.description}>

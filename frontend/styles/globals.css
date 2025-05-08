@@ -4,6 +4,8 @@ body {
   margin: auto;
   font-family: poppins, sans-serif;
   max-width: 1920px;
+  width:100vw;
+  overflow-x: hidden;
 
 }
 

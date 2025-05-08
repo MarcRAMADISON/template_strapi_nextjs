@@ -135,6 +135,15 @@
     place-self: center;
     margin: 70px auto auto auto
 }
+.bouton{
+    border-radius: 20px;
+    padding: 13px 35px;
+    background: linear-gradient(90deg,rgb(228, 247, 250) 0%, rgba(148, 249, 255, 1) 100%);
+    margin-top: 20px;
+    place-self: start;
+    color: #0b4276;
+    font-weight: bold;
+}
 
 @media (min-width:1921px){
     .form{
