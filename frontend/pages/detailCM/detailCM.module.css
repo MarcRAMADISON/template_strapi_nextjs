@@ -92,6 +92,15 @@
     margin-top: 0px;
     color:#002d3e
 }
+.promotion{
+    padding: 15px 30px;
+    background-color: #fff;
+    border:1px solid #ffde59;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    width:90%;
+    margin-top: -20px;
+}
 @media (max-width:1380px) and (min-width:1081px){
     .container{
        margin-left:2vw

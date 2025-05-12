@@ -33,6 +33,7 @@ function DetailCM() {
               );
             })}
           </div>
+          <div className={styles.promotion}>🔥📢 Promotion : 275€ HT Offre Access + site de réservation offert</div>
         </Animation>
         <Animation className={styles.tarifCard} animation="fadeInDown">
           <div className={styles.imageContainer}>
